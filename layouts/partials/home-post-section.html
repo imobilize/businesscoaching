@@ -1,0 +1,36 @@
+<div class="bg-grey-50" id="blog">
+    <div class="container py-16 md:py-20 mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 items-end gap-6">
+            <div class="">
+                <h2 class="xs:text-2xl md:text-3xl lg:text-4xl font-medium leading-none text-heading">Latest from our
+                    blog</h2>
+            </div>
+            <div class="text-2xl md:text-end">
+                <a href="/blog" class="text-amber-600 hover:text-amber-500">View all posts</a>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-12">
+            {{ range ( first 2 ( where .Paginator.Pages "Type" "blog" ) ) }}
+            <a href="{{.RelPermalink}}" class="shadow">
+                {{ $featured := .Params.featuredImage }}
+                {{ with .Resources.GetMatch $featured }}
+                {{ $postimage := (.Resize "500x webp q90").RelPermalink }}
+                <div style="background-image: url({{ $postimage }})"
+                    class="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72">
+                    <span
+                        class="absolute inset-0 block bg-gradient-to-b from-blog-gradient-from to-blog-gradient-to bg-cover bg-center bg-no-repeat opacity-10 transition-opacity group-hover:opacity-50"></span>
+                    <span
+                        class="absolute right-0 bottom-0 mr-4 mb-4 block rounded-full border-2 border-white px-6 py-2 text-center font-body text-sm font-bold uppercase text-white md:text-base">Read
+                        More</span>
+                </div>
+                {{ end }}
+                <div class="bg-white py-6 px-5 xl:py-8">
+                    <span class="block font-body text-lg font-semibold text-black">{{.Title}}</span>
+                    <span class="block pt-2 font-body text-grey-20">{{ .Params.description }}</span>
+                </div>
+            </a>
+            {{ end }}
+
+        </div>
+    </div>
+</div>

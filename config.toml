@@ -1,0 +1,139 @@
+baseURL = "https://topbusinesscoaching.com/"
+title = "Business Coaching"
+
+languageCode = "en-us"
+DefaultContentLanguage = "en"
+
+relativeURLs = true
+enableEmoji = true
+enableGitInfo = false
+enableRobotsTXT = true
+canonifyURLs = true
+paginate = 8
+darkmode_js = ["assets/js/darkmode.js"]
+enableInlineShortcodes = true
+
+[outputs]
+home = ["HTML", "AMP", "RSS", "JSON"]
+
+
+[permalinks]
+    blog = "/:title"
+    categories = "/:title"
+    tags = "/:title"
+
+[params]
+author = "Business Coaching"
+authorimage = "../assets/images/global/author.webp"
+github = "https://github.com/imobilize/businesscoaching"
+facebook = "https://facebook.com/businesscoaching"
+og_image = "/images/outsourced-sales-cover.png"
+sitename = "Business Coaching"
+twitter = "@businesscoaching"
+description = "Business Coaching is an agency which handles your sales pipeline for you"
+logo = ""
+home = "Home"
+# Google Analitycs
+googleAnalitycsID = "" # Your ID
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      attribute = true
+      autoHeadingID = true
+      autoHeadingIDType = "github"
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = true
+      xhtml = false
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineAnchors = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
+
+
+
+[taxonomies]
+category = "Categories"
+tag = "Tags"
+
+[privacy]
+[privacy.disqus]
+disable = false
+[privacy.googleAnalytics]
+anonymizeIP = true
+disable = false
+respectDoNotTrack = false
+useSessionStorage = false
+[privacy.instagram]
+disable = false
+simple = false
+[privacy.twitter]
+disable = false
+enableDNT = false
+simple = false
+[privacy.vimeo]
+disable = false
+enableDNT = false
+simple = false
+[privacy.youtube]
+disable = false
+privacyEnhanced = true
+
+[menu]
+    
+  [[menu.main]]
+  name = "About"
+  URL = "book"
+  weight = 1
+
+  [[menu.main]]
+  name = "Reviews"
+  URL = "reviews"
+  weight = 2
+
+  [[menu.main]]
+  name = "Chapters"
+  URL = "chapters"
+  weight = 3
+  
+  [[menu.main]]
+  name = "Author"
+  URL = "author"
+  weight = 4
+  
+  [[menu.main]]
+  name = "Blog"
+  URL = "blog"
+  weight = 5
+  
+  [[menu.main]]
+  name = "Free Resources"
+  URL = "resources"
+  weight = 6
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.111.3"
