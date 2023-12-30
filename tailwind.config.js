@@ -1,4 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
+const plugin = require('tailwindcss/plugin');
 
 // tailwind.config.js
 module.exports = {
@@ -10,9 +11,9 @@ module.exports = {
       ...defaultTheme.screens,
     },
     fontFamily: {
-      // 'sans': ['ui-sans-serif', 'Poppins'],
-      // 'serif': ['ui-serif', 'Poppins'],
-      // 'mono': ['ui-monospace', 'Poppins'],
+      'sans': ['ui-sans-serif', 'Poppins'],
+      'serif': ['ui-serif', 'Poppins'],
+      'mono': ['ui-monospace', 'Poppins'],
       'poppins': ['"Poppins"', 'cursive']
     },
     container: {
@@ -25,8 +26,8 @@ module.exports = {
         secondary: '#F18F01',
         secondaryHover: '#F59E0B',
         neutral: '#DFF3E4',
-        dark: '#171738',
-        darksecondary: '#8A817C',
+        dark: '#1e293b',
+        darkSecondary: '#8A817C',
         heading: '#171738',
         body: '#1e3a8a',
       },
@@ -79,5 +80,12 @@ module.exports = {
   variants: {
     typography: ["dark"],
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    plugin(function ({ addBase }) {
+      addBase({
+        'html': { fontSize: "18px" },
+      })
+    })
+  ],
 };

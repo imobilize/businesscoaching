@@ -1,0 +1,207 @@
+<section>
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="relative -mx-4 overflow-hidden bg-indigo-50 px-4 py-10 sm:-mx-6 md:mx-0 md:rounded-5xl xl:py-20">
+            {{ with resources.GetMatch "images/background-newsletter.jpg" }}
+            <img alt="" loading="lazy" width="919" height="1351" decoding="async" data-nimg="1"
+                class="absolute left-1/2 top-0 translate-x-[-10%] translate-y-[-45%] lg:translate-x-[-32%]"
+                style="color:transparent" src="{{ .RelPermalink }}">
+            {{ end }}
+            <div class="relative max-w-screen-xl px-4 sm:px-2 mx-auto grid grid-cols-12 gap-x-6">
+                <div class="col-span-12 lg:col-span-6 space-y-8 sm:space-y-6 px-4 sm:px-6">
+                    <span class="font-medium text-xl text-heading">Welcome to</span>
+                    <h2 class="text-4xl font-semibold"><span class="text-secondary">Business Launch</span>
+                        <span class="text-heading"> Academy</span>
+                    </h2>
+                    <div class="space-y-2">
+                        <h4 class="text-lg font-medium">Professional Access, Non-stop Availability</h4>
+                        <p class="paragraph text-sm xl:text-base">
+                            We provide premium access to crypto trading for both individuals and institutions through
+                            high
+                            liquidity,
+                            reliable order execution and constant uptime.
+                        </p>
+                    </div>
+                    <div class="space-y-2">
+                        <h4 class="text-lg font-medium">A Range of Powerful Apis</h4>
+                        <p class="paragraph text-sm xl:text-base">
+                            Set up your own trading interface or deploy your algorithmic strategy with our
+                            high-performance FIX
+                            and
+                            HTTP APIs. Connect to our WebSocket for real-time data streaming.
+                        </p>
+                    </div>
+                    <div class="space-y-2">
+                        <h4 class="text-lg font-medium">Customer Support</h4>
+                        <p class="paragraph text-sm xl:text-base">
+                            Premium 24/7 support available to all customers worldwide by phone or email. Dedicated
+                            account
+                            managers
+                            for partners.
+                        </p>
+                    </div>
+                    <div class="flex flex-col sm:flex-row"><button
+                            class="text-center rounded-full hover:shadow-md hover:shadow-[#0c66ee]/50 transition duration-300 px-10 py-4 bg-inherit text-gradient border border-[#4A8FF6] text-base">
+                            Get Started
+                        </button> <button
+                            class="text-sm hover:shadow-md hover:shadow-[#0c66ee]/50 transition duration-300 bg-inherit text-[#4A8FF6] px-10 py-4 text-center underline rounded-full">
+                            Learn More
+                        </button></div>
+                </div>
+                <div class="col-span-12 lg:col-span-6">
+
+                    <div class="w-full sm:mt-20 xl:mt-0 rounded-2xl overflow-hidden">
+                        {{ with resources.GetMatch "images/black-owned-business.jpg" }}
+                        {{ $small := (.Resize "400x webp q100").RelPermalink }}
+                        {{ $medium := (.Resize "550x webp q100").RelPermalink }}
+                        {{ $large := (.Resize "900x webp q100").RelPermalink }}
+                        {{ $featuredimage := (.Resize "1500x webp q100").RelPermalink }}
+                        <img src="{{ $featuredimage }}" alt="" class="w-full">
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="max-w-screen-xl mx-auto py-16 px-5">
+    <div class="mt-16 md:mt-0">
+        <h2 class="text-2xl lg:text-3xl font-bold lg:tracking-tight">
+            Everything you need to scale a business
+        </h2>
+        <p class="text-lg mt-4 text-slate-600">
+            Astro comes batteries included. It takes the best parts of state-of-the-art
+            tools and adds its own innovations.
+        </p>
+    </div>
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+        <div class="flex gap-4 items-start">
+            <div class="">
+                <svg class="w-8 h-8 mt-1 text-green-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor"
+                        d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                    </path>
+                </svg>
+            </div>
+            <div>
+                <h3 class="font-semibold text-lg">Frameworks And Method</h3>
+                <p class="text-slate-500 mt-2 leading-relaxed">Build your site using React, Svelte, Vue, Preact, web
+                    components, or just plain ol' HTML + JavaScript.</p>
+            </div>
+        </div>
+        <div class="flex gap-4 items-start">
+            <div class="">
+                <svg class="w-8 h-8 mt-1 text-green-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor"
+                        d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                    </path>
+                </svg>
+            </div>
+            <div>
+                <h3 class="font-semibold text-lg">Actionable Content</h3>
+                <p class="text-slate-500 mt-2 leading-relaxed">Astro renders your entire page to static HTML, removing
+                    all JavaScript from your final build by default.</p>
+            </div>
+        </div>
+        <div class="flex gap-4 items-start">
+            <div class="">
+                <svg class="w-8 h-8 mt-1 text-green-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor"
+                        d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                    </path>
+                </svg>
+            </div>
+            <div>
+                <h3 class="font-semibold text-lg">Community</h3>
+                <p class="text-slate-500 mt-2 leading-relaxed">Need some JS? Astro can automatically hydrate interactive
+                    components when they become visible on the page. </p>
+            </div>
+        </div>
+        <div class="flex gap-4 items-start">
+            <div class="">
+                <svg class="w-8 h-8 mt-1 text-green-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor"
+                        d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                    </path>
+                </svg>
+            </div>
+            <div>
+                <h3 class="font-semibold text-lg">What's Working Now</h3>
+                <p class="text-slate-500 mt-2 leading-relaxed">Astro supports TypeScript, Scoped CSS, CSS Modules, Sass,
+                    Tailwind, Markdown, MDX, and any other npm packages.</p>
+            </div>
+        </div>
+        <div class="flex gap-4 items-start">
+            <div class="">
+                <svg class="w-8 h-8 mt-1 text-green-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor"
+                        d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                    </path>
+                </svg>
+            </div>
+            <div>
+                <h3 class="font-semibold text-lg">Ability To Ask Questions</h3>
+                <p class="text-slate-500 mt-2 leading-relaxed">Automatic sitemaps, RSS feeds, pagination and collections
+                    take the pain out of SEO and syndication. It just works!</p>
+            </div>
+        </div>
+        <div class="flex gap-4 items-start">
+            <div class="">
+                <svg class="w-8 h-8 mt-1 text-green-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor"
+                        d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                    </path>
+                </svg>
+            </div>
+            <div>
+                <h3 class="font-semibold text-lg">Motivation</h3>
+                <p class="text-slate-500 mt-2 leading-relaxed">Astro is an open source project powered by hundreds of
+                    contributors making thousands of individual contributions.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{{ $bgpattern := resources.GetMatch "images/landing/bg-tools.webp" }}
+<section class="bg-cover relative max-w-full sm:mx-4 xl:mx-10 py-8 shadow sm:rounded-2xl overflow-hidden"
+    style="background-image: url('{{ $bgpattern.RelPermalink }}');">
+    <div class="w-full flex flex-col items-center">
+        <h2 data-aos="flip-down" class="text-3xl sm:text-4xl font-semibold text-center aos-init aos-animate">
+            Getting started is easy
+        </h2>
+        <div data-aos="fade-up"
+            class="relative w-full flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0 px-4 xl:px-10 mt-16 sm:mt-8 aos-init">
+            <div class="max-w-[280px] xl:max-w-[363px] space-y-6 sm:space-y-3 text-center">
+                {{ $signup := resources.GetMatch "images/icons/sign-up.svg" }}
+                <img src="{{ $signup.RelPermalink }}" alt="" class="max-w-[145px] mx-auto">
+                <h3 class="text-xl text-neutral-800 font-semibold">Sign Up</h3>
+                <p class="text-sm text-gray-700 leading-relaxed">
+                    Sign up for your free NEFA Wallet on web, iOS or Android and follow our easy process to set up your
+                    profile
+                </p>
+            </div>
+            <div class="max-w-[280px] xl:max-w-[363px] space-y-6 sm:space-y-3 text-center">
+                {{ $call := resources.GetMatch "images/icons/video-call.svg" }}
+                <img src="{{ $call.RelPermalink }}" alt="" class="max-w-[145px] mx-auto">
+                <h3 class="text-xl text-neutral-800 font-semibold">Fund</h3>
+                <p class="text-sm text-gray-700 leading-relaxed">
+                    Choose your preferred payment method such as bank transfer or credit card to top up your NEFA Wallet
+                </p>
+            </div>
+            <div class="max-w-[280px] xl:max-w-[363px] space-y-6 sm:space-y-3 text-center">
+                {{ $start := resources.GetMatch "images/icons/startup-rocket.svg" }}
+                <img src="{{ $start.RelPermalink }}" alt="" class="max-w-[145px] mx-auto">
+                <h3 class="text-xl text-neutral-800 font-semibold">Buy Crypto</h3>
+                <p class="text-sm text-gray-700 leading-relaxed">
+                    Buy Bitcoin or Ethereum, then securely store it in your Wallet or send it on easily to your friends
+                    anywhere
+                </p>
+            </div> <img src="/_nuxt/img/arrow.60f4e50.png" alt=""
+                class="hidden lg:inline-block absolute top-32 left-64 xl:left-[22rem] w-24 xl:w-[9.5rem]"> <img
+                src="/_nuxt/img/arrow.60f4e50.png" alt=""
+                class="hidden lg:inline-block absolute top-32 right-64 xl:right-[22rem] w-24 xl:w-[9.5rem]">
+        </div>
+    </div>
+</section>

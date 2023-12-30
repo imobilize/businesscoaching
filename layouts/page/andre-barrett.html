@@ -14,7 +14,7 @@
                     {{ $medium := (.Resize "550x webp q80").RelPermalink }}
                     {{ $large := (.Resize "900x webp q80").RelPermalink }}
                     {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
-                    <img src="{{ $featuredimage }}" class="h-80 rounded-full" alt="author" srcset="
+                    <img src="{{ $featuredimage }}" class="h-48 rounded-full sm:h-56" alt="Andre Barrett" srcset="
                     {{- with $small -}}, {{.}} 400w{{- end -}}
                     {{- with $medium -}}, {{.}} 550w{{- end -}}
                     {{- with $large -}}, {{.}} 768w{{- end -}}
@@ -22,7 +22,7 @@
                     {{end}}
                 </div>
                 <div class="pt-8 sm:pt-10 lg:pl-8 lg:pt-0">
-                    <h1 class="text-center font-header text-4xl text-white sm:text-left sm:text-5xl md:text-6xl">
+                    <h1 class="text-center font-header text-3xl text-white sm:text-left sm:text-4xl md:text-5xl">
                         Hello I'm Andre Barrett!
                     </h1>
                     <div class="flex flex-col justify-center pt-3 sm:flex-row sm:pt-5 lg:justify-start">
@@ -112,20 +112,39 @@
     <div class="bg-grey-50" id="about">
         <div class="container mx-auto flex flex-col items-center py-16 md:py-20 lg:flex-row">
             <div class="w-full text-center sm:w-3/4 lg:w-3/5 lg:text-left">
-                <h2 class="font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
+                <h2 class="font-header text-3xl font-semibold uppercase text-heading sm:text-4xl lg:text-5xl">
                     Who am I?
                 </h2>
-                <h4 class="pt-6 font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
-                    I'm Andre Barrett, an Author, Entrepreneur and Investor
+                <h4 class="pt-6 font-header text-xl font-medium text-body sm:text-2xl lg:text-3xl">
+                    I'm an Author, Entrepreneur and Investor
                 </h4>
                 <p class="pt-6 font-body leading-relaxed text-grey-20">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                    mollit anim id est laborum.
+                    I'm the founder of Business Launch Academy and I'm really excited at the opportunity to help you
+                    build
+                    your business.
+
+                    I've been working in Startups and helping small businesses grow for over 16 years.
+                    I have failed multiple times as an Entrepreneur before I started getting any success.
+                    This puts me in a great position to help others avoid the countless mistakes I made and direct them
+                    on a path that gives them the highest probability of success.
+                </p>
+                <br />
+                <p>
+                    Now I own and manage multiple 6 and 7+ figure businesses and I'm buying or starting a new one every
+                    year. I do this in a holding company structure called Barrett Ventures.
+
+                    You see business becomes a simple formula once you have it figured out. You can then apply the
+                    formula in a
+                    rinse and repeat manner to any business venture you take on.
+                </p>
+                <br />
+                <p>
+                    I was keen to share the success I have achieved so I started writing, putting together courses and
+                    coaching. I am certified Mindset coach which means not only can I give you the business acumen you
+                    need to thrive, I can also unlock any mindset restrictions holding you back too.
+
+                    Without a shadow of a doubt, I would say the mindset improvement is the most important out of all
+                    the services I can provide.
                 </p>
                 <div class="flex flex-col justify-center pt-6 sm:flex-row lg:justify-start">
                     <div class="flex items-center justify-center sm:justify-start">
@@ -205,7 +224,7 @@
             Here's what I'm good at
         </h2>
         <h3 class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
-            These are the services Ioffer
+            This is what I can help you with
         </h3>
 
         <div class="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3">
