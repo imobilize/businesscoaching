@@ -187,47 +187,6 @@
   <!-- ====== About Section End -->
 
 
-
-  {{ $bgimage := (resources.Get "images/bg2.png").RelPermalink }}
-  <section
-    class="relative table w-full pb-0 lg:pb-0 bg-slate-800 bg-[url('{{ $bgimage }}')] bg-center bg-no-repeat bg-cover"
-    style="background-image: url('{{$bgimage}}');">
-    <div class="container px-4 mx-auto">
-      <div class="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 items-center gap-[30px]">
-        <div class="lg:col-span-7">
-          <div class="mt-6">
-            <h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold  mb-5 text-white">
-              Meet Andre Barrett
-            </h2>
-            <p class="pr-0 my-8 text-base text-gray-200 sm:text-xl xl:text-2xl lg:pr-20">
-              I’m an investor, entrepreneur and software engineer based in London, England. I’m the founder and Director
-              of Barrett Ventures where we start or buy companies. We then incubate these businesses in order to
-              substantially grow them.</p>
-            <div class="xs:none md:mt-20">
-              <div class="flex flex-wrap -m-2.5 md:mb-20"></div>
-            </div>
-          </div>
-        </div><!--end col-->
-
-        <div class="lg:col-span-5 mt-8 md:mt-0">
-          {{ with resources.Get "images/andre-barrett-2.png" }}
-          {{ $small := (.Resize "400x webp q80").RelPermalink }}
-          {{ $medium := (.Resize "550x webp q80").RelPermalink }}
-          {{ $large := (.Resize "900x webp q80").RelPermalink }}
-          {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
-          <img class="object-scale-down xs:mx-auto xs:h-96 md:h-auto" src="{{ $featuredimage }}" srcset="
-          {{- with $small -}}, {{.}} 400w{{- end -}}
-          {{- with $medium -}}, {{.}} 550w{{- end -}}
-          {{- with $large -}}, {{.}} 768w{{- end -}}
-          {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}" alt="About Business Coaching Founder">
-          {{end}}
-        </div><!--end col-->
-      </div><!--end grid-->
-    </div><!--end container-->
-  </section>
-
-
-
   {{ partial "about-story.html" . }}
 
 </main>
