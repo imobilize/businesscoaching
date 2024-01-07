@@ -173,11 +173,11 @@
         </div>
     </div>
 
-    <div class="container py-16 md:py-20" id="services">
-        <h2 class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
+    <div class="container mx-auto py-16 md:py-20" id="services">
+        <h2 class="text-center font-header text-3xl font-semibold uppercase text-heading sm:text-4xl lg:text-5xl">
             Here's what I'm good at
         </h2>
-        <h3 class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
+        <h3 class="pt-6 text-center font-header text-xl font-medium text-dark sm:text-2xl lg:text-3xl">
             This is what I can help you with
         </h3>
 
@@ -211,7 +211,7 @@
                 </div>
                 <div class="text-center">
                     <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
-                        Technical Writing
+                        Project Management
                     </h3>
                     <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -247,7 +247,7 @@
                 </div>
                 <div class="text-center">
                     <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
-                        Email Development
+                        Branding and Marketing
                     </h3>
                     <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -293,39 +293,49 @@
         </div>
     </div>
 
-    <div class="bg-grey-50" id="clients">
+    <div class="container mx-auto bg-grey-50" id="clients">
         <div class="container py-16 md:py-20">
             <div class="mx-auto w-full sm:w-3/4 lg:w-full">
                 <h2
-                    class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
+                    class="text-center font-header text-3xl font-semibold uppercase text-heading sm:text-4xl lg:text-5xl">
                     Clients I have worked with
                 </h2>
                 <div class="flex flex-wrap items-center justify-center pt-4 sm:pt-4">
                     <span class="m-8 block">
-                        <img src="/assets/img/logo-coca-cola.svg" alt="client logo" class="mx-auto block h-12 w-auto">
+                        {{ with resources.Get "images/landing/gamesys-logo.png" }}
+                        <img src="{{ .RelPermalink }}" alt="client logo" class="mx-auto block h-12 w-auto">
+                        {{ end }}
                     </span>
                     <span class="m-8 block">
-                        <img src="/assets/img/logo-apple.svg" alt="client logo" class="mx-auto block h-12 w-auto">
-                    </span>
-
-                    <span class="m-8 block">
-                        <img src="/assets/img/logo-netflix.svg" alt="client logo" class="mx-auto block h-12 w-auto">
-                    </span>
-
-                    <span class="m-8 block">
-                        <img src="/assets/img/logo-amazon.svg" alt="client logo" class="mx-auto block h-12 w-auto">
+                        {{ with resources.Get "images/landing/kindred-logo.png" }}
+                        <img src="{{ .RelPermalink }}" alt="client logo" class="mx-auto block h-12 w-auto">
+                        {{ end }}
                     </span>
 
                     <span class="m-8 block">
-                        <img src="/assets/img/logo-stripe.svg" alt="client logo" class="mx-auto block h-12 w-auto">
+                        {{ with resources.Get "images/landing/sainsburys-logo.png" }}
+                        <img src="{{ .RelPermalink }}" alt="client logo" class="mx-auto block h-12 w-auto">
+                        {{ end }}
+                    </span>
+
+                    <span class="m-8 block">
+                        {{ with resources.Get "images/landing/sky-logo.png" }}
+                        <img src="{{ .RelPermalink }}" alt="client logo" class="mx-auto block h-12 w-auto">
+                        {{ end }}
+                    </span>
+
+                    <span class="m-8 block">
+                        {{ with resources.Get "images/landing/jp-morgan-logo.jpg" }}
+                        <img src="{{ .RelPermalink }}" alt="client logo" class="mx-auto block h-12 w-auto">
+                        {{ end }}
                     </span>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container py-16 md:py-20" id="work">
-        <h2 class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">
+    <div class="container mx-auto py-16 md:py-20" id="work">
+        <h2 class="text-center font-header text-3xl font-semibold uppercase text-heading sm:text-4xl lg:text-5xl">
             My work experience
         </h2>
         <h3 class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
