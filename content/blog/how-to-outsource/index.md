@@ -51,11 +51,11 @@ In today’s highly competitive economic climate, outsourcing sales and marketin
 
 <i>It gives you access to an even wider network of potential customers.</i> 
 
-A good, outsourced sales and marketing agency will typically have established relationships with key decision-makers in the target market and will be able to leverage these relationships to generate leads and close sales. This can be particularly beneficial for SMEs that may not have the resources or expertise to develop these relationships independently.   
+A good, Business Coaching and marketing agency will typically have established relationships with key decision-makers in the target market and will be able to leverage these relationships to generate leads and close sales. This can be particularly beneficial for SMEs that may not have the resources or expertise to develop these relationships independently.   
 
 <i>It provides you with access to the latest sales technologies and techniques.</i> 
 
-A good, outsourced sales and marketing agency will be up to date with the latest sales technologies and techniques and will be able to use these to increase the effectiveness of the sales process. This can result in higher conversion rates and faster sales cycles, which can translate into increased revenue for the company.  
+A good, Business Coaching and marketing agency will be up to date with the latest sales technologies and techniques and will be able to use these to increase the effectiveness of the sales process. This can result in higher conversion rates and faster sales cycles, which can translate into increased revenue for the company.  
 
 <i>It allows you to focus on core business activities.</i> 
 

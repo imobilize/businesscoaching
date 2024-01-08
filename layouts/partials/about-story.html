@@ -1,5 +1,5 @@
 <div class="mx-auto sm:px-4 pt-5 pb-10 bg-white">
-    <div class="max-w-4xl mx-auto border">
+    <div class="max-w-5xl mx-auto border px-3">
         <div class="flex flex-wrap pt-3 pb-9">
             <div class="md:w-full pr-4 pl-4">
                 <div class="py-3 text-center">
@@ -21,23 +21,19 @@
                 </div>
             </div>
         </div>
-        <div class="flex flex-wrap pt-3 pb-9">
+        <div class="py-3 px-6">
+            <div class="block border-dashed border-b-2">
+            </div>
+        </div>
+        <div class="flex flex-wrap pb-9">
             <div class="md:w-full pr-4 pl-4">
                 <div class="py-3">
-                    <div class="block border-dashed border-b-2">
-                        <div></div><br>
-                    </div>
-                    <div class="de elHeadlineWrapper ui-droppable de-editable" id="headline-29947"
-                        data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true"
-                        data-trigger="none" data-animate="fade" data-delay="500"
-                        style="margin-top: 30px; outline: none; cursor: pointer; display: block; font-family: &quot;Open Sans&quot;, Helvetica, sans-serif !important;"
-                        aria-disabled="false" data-google-font="Open+Sans">
-                        <div class="ne elHeadline hsSize3 lh4 elMargin0 elBGStyle0 hsTextShadow0 mfs_19"
-                            style="text-align: left; font-size: 21px; color: rgb(45, 45, 45);" data-bold="inherit"
-                            contenteditable="false" spellcheck="false">
-                            <div><b>From: Andre Barrett</b></div>
-                            <div><em>Founder of Business Launch Academy</em></div>
-                        </div>
+
+                    <div class="mt-8 text-left text-xl">
+
+                        <div><b>From: Andre Barrett</b></div>
+                        <div><em>Founder of Business Launch Academy</em></div>
+
                     </div>
                 </div>
             </div>
@@ -202,8 +198,9 @@
             <div class="md:w-1/2 pr-4 pl-4">
                 <div class="py-3">
                     <div class="">
-                        <img src="//goto.clickfunnels.com/hosted/images/01/c5f4a050a011e8ab20dbfb628d7f77/g1.png"
-                            class="elIMG ximg el_media_theme1" alt="" style="" tabindex="0">
+                        {{ $img := resources.Get "images/andre-barrett.jpg"}}
+                        <img src="{{ $img.RelPermalink }}" class="elIMG ximg el_media_theme1" alt="" style=""
+                            tabindex="0">
                     </div>
                 </div>
             </div>

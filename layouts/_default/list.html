@@ -20,7 +20,7 @@
 
     <ul>
         {{ range .Site.Taxonomies.tags }}
-                <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
+        <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
         {{ end }}
     </ul>
 
@@ -37,9 +37,9 @@
             <div
                 class="w-full container mx-auto flex flex-col sm:flex-row items-center justify-center text-sm font-bold uppercase mt-0 px-6 py-2">
                 {{ range $term, $value := (.Site.Taxonomies.categories) }}
-                <a href="{{ "/categories/" | relLangURL }}{{ $term | urlize }}">{{ $value }}</a>
+                <a href="{{ " /categories/" | relLangURL }}{{ $term | urlize }}">{{ $value }}</a>
                 {{ end }}
-                
+
                 {{ range $name, $taxonomy := .Site.Taxonomies }}
                 {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
                 <a href="{{ .RelPermalink }}" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">{{$name}}</a>
@@ -80,7 +80,7 @@
 
             <div class="w-full bg-white shadow flex flex-col my-4 p-6">
                 <p class="text-xl font-semibold pb-5">About Us</p>
-                <p class="pb-2">Outsourced Sales is
+                <p class="pb-2">Business Coaching is
                     a sales and marketing agency that works with small to medium size businesses to grow their
                     sales. We offer a way to outsource your sales and marketing function so that you can
                     concentrate on delivery of your products and services. </p>

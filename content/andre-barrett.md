@@ -7,7 +7,7 @@ description: Andre Barrett - Entrepreneur, Investor, Business Coach
 author: "Andre Barrett"
 image: "images/outsourced-sales-cover.png"
 images: ["images/outsourced-sales-cover.png"]
-keywords: "Outsourced Sales, Outsourcing, Marketing, Sales, Branding, Lead Generation"
+keywords: "Business Coaching, Outsourcing, Marketing, Sales, Branding, Lead Generation"
 type: page
 layout: andre-barrett
 ---

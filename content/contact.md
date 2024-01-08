@@ -8,5 +8,5 @@ layout: contact
 description: Contact us
 image: "images/landing/outsourced-sales-cover.png"
 images: ["images/landing/outsourced-sales-cover.png"]
-keywords: "Outsourced Sales Contact Us, Email Address, Telephone Number"
+keywords: "Business Coaching Contact Us, Email Address, Telephone Number"
 ---
