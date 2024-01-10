@@ -26,8 +26,9 @@
                 </div>
                 {{ end }}
                 <div class="bg-white py-6 px-5 xl:py-8">
-                    <span class="block font-body text-lg font-semibold text-black">{{.Title}}</span>
-                    <span class="block pt-2 text-grey-20">{{ .Params.description }}</span>
+                    <span
+                        class="block font-body text-lg font-semibold text-heading hover:text-primaryHover">{{.Title}}</span>
+                    <span class="block pt-2 text-body">{{ .Params.description }}</span>
                 </div>
             </a>
             {{ end }}

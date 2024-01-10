@@ -9,16 +9,17 @@
         <div class="container mx-auto relative z-30">
             <div class="flex flex-col items-center justify-center lg:flex-row">
                 <div class="rounded-full border-8 border-primary shadow-xl">
-                    {{ with resources.Get "images/andre-barrett-head-shot.png" }}
+                    {{ with resources.Get "images/andre-barrett-business-coach.png" }}
                     {{ $small := (.Resize "400x webp q80").RelPermalink }}
                     {{ $medium := (.Resize "550x webp q80").RelPermalink }}
                     {{ $large := (.Resize "900x webp q80").RelPermalink }}
                     {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
-                    <img src="{{ $featuredimage }}" class="h-48 rounded-full sm:h-56" alt="Andre Barrett" srcset="
+                    <img src="{{ $featuredimage }}" class="h-48 rounded-full sm:h-56"
+                        alt="Andre Barrett - Author, Entrepreneur, Business Coach" srcset="
                     {{- with $small -}}, {{.}} 400w{{- end -}}
                     {{- with $medium -}}, {{.}} 550w{{- end -}}
                     {{- with $large -}}, {{.}} 768w{{- end -}}
-                    {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}" alt="About Andre Barrett">
+                    {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}">
                     {{end}}
                 </div>
                 <div class="pt-8 sm:pt-10 lg:pl-8 lg:pt-0">

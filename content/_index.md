@@ -1,10 +1,11 @@
 ---
 title: "Producing Elite Entrepreneurs - Business Coaching"
-date: 2023-02-23T15:28:43+06:00
+date: 2024-01-08T15:28:43+06:00
 draft: false
-description: "Business Coaching does marketing and selling of products and services for companies looking to outsource"
+language: en
+description: "Business Coaching that produces Elite Entrepreneurs all over the world"
 author: "Andre Barrett"
-image: "images/outsourced-sales-cover.png"
-images: ["images/outsourced-sales-cover.png"]
-keywords: "Business Coaching, Outsourcing, Marketing, Sales, Branding, Lead Generation"
+image: "images/business-coaching-cover.jpg"
+images: ["images/business-coaching-cover.jpg"]
+keywords: "Business Coaching, Startups, Marketing, Sales, Branding, Entrepreneurship"
 ---

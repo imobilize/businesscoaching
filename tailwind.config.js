@@ -29,7 +29,7 @@ module.exports = {
         dark: '#1e293b',
         darkSecondary: '#8A817C',
         heading: '#171738',
-        body: '#1e3a8a',
+        body: '#111827',
       },
 
       lineHeight: {

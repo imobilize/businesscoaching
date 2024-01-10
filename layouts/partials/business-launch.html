@@ -14,7 +14,7 @@
                     </h2>
                     <div class="space-y-2">
                         <h4 class="text-lg font-medium">6 Month Accelerator Program</h4>
-                        <p class="paragraph text-sm xl:text-base">
+                        <p class="paragraph text-body">
                             Designed to fast track business owners to a 6 and even 7
                             figure business. Work on your business with all the tools,
                             knowledge and support you need to succeed.
@@ -22,7 +22,7 @@
                     </div>
                     <div class="space-y-2">
                         <h4 class="text-lg font-medium">Personal One to One Coaching</h4>
-                        <p class="paragraph text-sm xl:text-base">
+                        <p class="paragraph text-body">
                             Be guided by a coach who has achieved what you want to achieve. They will you give the
                             roadmap,
                             accountability and guidance to get you there.
@@ -30,7 +30,7 @@
                     </div>
                     <div class="space-y-2">
                         <h4 class="text-lg font-medium">Mindset and Business Mastery</h4>
-                        <p class="paragraph text-sm xl:text-base">
+                        <p class="paragraph text-body">
                             Get the business skills you need to create a thriving business. Overlay mindset principles
                             to ensure
                             you stay motivated, productive and on track at all times.
@@ -57,10 +57,10 @@
 
 <section class="max-w-screen-xl mx-auto py-16 px-5">
     <div class="mt-16 md:mt-0">
-        <h2 class="text-2xl lg:text-3xl font-bold lg:tracking-tight">
+        <h3 class="text-2xl lg:text-3xl font-bold lg:tracking-tight text-heading">
             Everything you need to scale a business
-        </h2>
-        <p class="text-lg mt-4 text-slate-600">
+        </h3>
+        <p class="text-lg mt-4 text-body">
             Even if you have an existing business. Business Launch Academy comes with everything you need to take it to
             the next level.
         </p>
@@ -75,8 +75,8 @@
                 </svg>
             </div>
             <div>
-                <h3 class="font-semibold text-lg">Frameworks And Method</h3>
-                <p class="text-slate-500 mt-2 leading-relaxed">Apply tried and tested methods that are battle hardened
+                <h4 class="font-semibold text-lg">Frameworks And Method</h4>
+                <p class="text-body mt-2 leading-relaxed">Apply tried and tested methods that are battle hardened
                     and proven. Use the templates and guides to shortcut the process and get quick wins.</p>
             </div>
         </div>
@@ -89,8 +89,8 @@
                 </svg>
             </div>
             <div>
-                <h3 class="font-semibold text-lg">Actionable Content</h3>
-                <p class="text-slate-500 mt-2 leading-relaxed">You won't just be learning. You'll be applying the
+                <h4 class="font-semibold text-lg">Actionable Content</h4>
+                <p class="text-body mt-2 leading-relaxed">You won't just be learning. You'll be applying the
                     content provided to your
                     business to get instant results.</p>
             </div>
@@ -104,8 +104,8 @@
                 </svg>
             </div>
             <div>
-                <h3 class="font-semibold text-lg">Community</h3>
-                <p class="text-slate-500 mt-2 leading-relaxed">No need to feel like you are alone on your journey. The
+                <h4 class="font-semibold text-lg">Community</h4>
+                <p class="text-body mt-2 leading-relaxed">No need to feel like you are alone on your journey. The
                     community support is there to uplift you and share how to overcome challenges you might face.
                 </p>
             </div>
@@ -119,8 +119,8 @@
                 </svg>
             </div>
             <div>
-                <h3 class="font-semibold text-lg">What's Working Now</h3>
-                <p class="text-slate-500 mt-2 leading-relaxed">No need to waste your time trying to get outdated
+                <h4 class="font-semibold text-lg">What's Working Now</h4>
+                <p class="text-body mt-2 leading-relaxed">No need to waste your time trying to get outdated
                     business strategies to work. You get a behind the scenes look at what's working now so you can focus
                     only on what is going to work for you.</p>
             </div>
@@ -134,8 +134,8 @@
                 </svg>
             </div>
             <div>
-                <h3 class="font-semibold text-lg">Ability To Ask Questions</h3>
-                <p class="text-slate-500 mt-2 leading-relaxed">No more being hindered by not knowing. You'll get
+                <h4 class="font-semibold text-lg">Ability To Ask Questions</h4>
+                <p class="text-body mt-2 leading-relaxed">No more being hindered by not knowing. You'll get
                     immediate answers to questions to ensure you never get stuck on your journey.</p>
             </div>
         </div>
@@ -148,8 +148,8 @@
                 </svg>
             </div>
             <div>
-                <h3 class="font-semibold text-lg">Motivation</h3>
-                <p class="text-slate-500 mt-2 leading-relaxed">It's natural to run out of steam. Now you will have ways
+                <h4 class="font-semibold text-lg">Motivation</h4>
+                <p class="text-body mt-2 leading-relaxed">It's natural to run out of steam. Now you will have ways
                     to get back to being productive and staying on track to reach your goals.</p>
             </div>
         </div>
@@ -161,34 +161,43 @@
 <section class="bg-cover relative max-w-full sm:mx-4 xl:mx-10 py-8 shadow sm:rounded-2xl overflow-hidden"
     style="background-image: url('{{ $bgpattern.RelPermalink }}');">
     <div class="w-full flex flex-col items-center">
-        <h2 data-aos="flip-down" class="text-3xl sm:text-4xl font-semibold text-center aos-init aos-animate">
+        <h3 data-aos="flip-down" class="text-2xl sm:text-3xl font-semibold text-center">
             Getting started is easy
-        </h2>
-        <div data-aos="fade-up"
+        </h3>
+        <div
             class="relative w-full flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0 px-4 xl:px-10 mt-16 sm:mt-8 aos-init">
             <div class="max-w-[280px] xl:max-w-[363px] space-y-6 sm:space-y-3 text-center">
-                {{ $signup := resources.GetMatch "images/icons/sign-up.svg" }}
-                <img src="{{ $signup.RelPermalink }}" alt="" class="max-w-[145px] mx-auto">
-                <h3 class="text-xl text-neutral-800 font-semibold">Register</h3>
-                <p class="text-sm text-gray-700 leading-relaxed">
+                <figure class="w-16 mx-auto block">
+                    {{ $signup := resources.Get "images/icons/sign-up.svg" }}
+                    <img src="{{ $signup.RelPermalink }}" alt="Register for free business coaching"
+                        class="max-w-[145px] mx-auto">
+                </figure>
+                <h5 class="text-xl text-neutral-800 font-semibold">Register</h5>
+                <p class="text-sm text-body leading-relaxed">
                     Book in a free consultation. You will be sent an email confirming your registration. Reply to the
                     email answering any request for extra information.
                 </p>
             </div>
             <div class="max-w-[280px] xl:max-w-[363px] space-y-6 sm:space-y-3 text-center">
-                {{ $call := resources.GetMatch "images/icons/video-call.svg" }}
-                <img src="{{ $call.RelPermalink }}" alt="" class="max-w-[145px] mx-auto">
-                <h3 class="text-xl text-neutral-800 font-semibold">Consultation Call</h3>
-                <p class="text-sm text-gray-700 leading-relaxed">
+                <figure class="w-16 mx-auto block">
+                    {{ $call := resources.Get "images/icons/video-call.svg" }}
+                    <img src="{{ $call.RelPermalink }}" alt="Have a free business strategy session video call"
+                        class="max-w-[140px] mx-auto">
+                </figure>
+                <h5 class="text-xl text-neutral-800 font-semibold">Consultation Call</h5>
+                <p class="text-sm text-body leading-relaxed">
                     Have a discovery call where we find out more about you and what it is you are trying to achieve. We
                     will also answer any questions you have about the program.
                 </p>
             </div>
             <div class="max-w-[280px] xl:max-w-[363px] space-y-6 sm:space-y-3 text-center">
-                {{ $start := resources.GetMatch "images/icons/startup-rocket.svg" }}
-                <img src="{{ $start.RelPermalink }}" alt="" class="max-w-[145px] mx-auto">
-                <h3 class="text-xl text-neutral-800 font-semibold">Get Ready</h3>
-                <p class="text-sm text-gray-700 leading-relaxed">
+                <figure class="w-16 mx-auto block">
+                    {{ $start := resources.Get "images/icons/business-coaching-logo.svg" }}
+                    <img src="{{ $start.RelPermalink }}" alt="Get started with Business Launch Academy"
+                        class="max-w-[96px] mx-auto">
+                </figure>
+                <h5 class="text-xl text-neutral-800 font-semibold">Get Ready</h5>
+                <p class="text-sm text-body leading-relaxed">
                     If we both decide it's a good fit for you, then we will let you know when the next cohort begins and
                     what you need to do to get started.
                 </p>
