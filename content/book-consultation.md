@@ -6,11 +6,8 @@ language: en
 description: Book in your consultation to get a free business strategy session
 ---
 
-
-<!-- @format -->
+**Please be aware - We will not be rescheduling calls. So make sure that you are 100% available to have the call at the time slot you choose.**
 <!-- Calendly inline widget begin -->
-<!-- Calendly inline widget begin -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/outsourcedsales/30min?hide_gdpr_banner=1&primary_color=f59e0b" style="min-width:320px;height:930px;"></div>
+<div class="calendly-inline-widget" data-url="https://calendly.com/topbusinesscoaching/strategy-call?hide_gdpr_banner=1&primary_color=2564eb" style="min-width:320px;height:1000px;"></div>
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-<!-- Calendly inline widget end -->
 <!-- Calendly inline widget end -->

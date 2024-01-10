@@ -4545,6 +4545,11 @@ EmojiSymbols;
     margin-right: auto;
   }
 
+  .sm\:my-6 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
   .sm\:mt-16 {
     margin-top: 4rem;
   }
@@ -4712,6 +4717,11 @@ EmojiSymbols;
     padding-bottom: 2rem;
   }
 
+  .sm\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
   .sm\:pb-0 {
     padding-bottom: 0px;
   }
@@ -4817,6 +4827,11 @@ EmojiSymbols;
   .md\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
+  }
+
+  .md\:my-8 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   .md\:-mt-1 {
@@ -5063,6 +5078,11 @@ EmojiSymbols;
     padding-bottom: 1rem;
   }
 
+  .md\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
   .md\:pb-0 {
     padding-bottom: 0px;
   }
@@ -5093,6 +5113,10 @@ EmojiSymbols;
 
   .md\:pt-20 {
     padding-top: 5rem;
+  }
+
+  .md\:pt-8 {
+    padding-top: 2rem;
   }
 
   .md\:text-left {
@@ -5279,6 +5303,11 @@ EmojiSymbols;
   .lg\:mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .lg\:my-12 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 
   .lg\:-mr-40 {
@@ -5538,6 +5567,16 @@ EmojiSymbols;
     padding-bottom: 120px;
   }
 
+  .lg\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .lg\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
   .lg\:pb-14 {
     padding-bottom: 3.5rem;
   }
@@ -5580,6 +5619,10 @@ EmojiSymbols;
 
   .lg\:pt-20 {
     padding-top: 5rem;
+  }
+
+  .lg\:pt-10 {
+    padding-top: 2.5rem;
   }
 
   .lg\:text-left {

@@ -6,7 +6,7 @@ language: en
 type: page
 layout: contact
 description: Contact us
-image: "images/landing/outsourced-sales-cover.png"
-images: ["images/landing/outsourced-sales-cover.png"]
+image: "images/business-coaching-cover.jpg"
+images: ["images/business-coaching-cover.jpg"]
 keywords: "Business Coaching Contact Us, Email Address, Telephone Number"
 ---
