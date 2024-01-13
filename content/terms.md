@@ -7,18 +7,18 @@ description: Terms and conditions
 ---
 
 ### BINDING EFFECT
-This agreement (“Agreement”) is a binding agreement between you (“you”) and iMobilize Ltd, trading as Business Coaching, (“Business Coaching,” “Company,” “we” or “us”). Business Coaching is an Alias under the private limited company iMobilize Ltd. By using the site at www.outsourcedsales.com (the ‘Site’) or any information, materials, images, graphics, data, text, files, links, software, messages, communications, content, organization, design, compilation, magnetic translation, digital conversion, HTML, XML, Java code and other content related to the Site (collectively ‘Content’) or services provided in connection with the Site (the ‘Service’), you agree to abide by these Terms of Use, as the Company may amend them from time to time in its sole discretion. YOU AGREE THAT BY USING THE SERVICE YOU REPRESENT THAT YOU ARE AT LEAST 18 YEARS OLD AND THAT YOU ARE LEGALLY ABLE TO ENTER INTO THIS AGREEMENT.
+This agreement (“Agreement”) is a binding agreement between you (“you”) and iMobilize Ltd, trading as Business Coaching, (“Business Coaching,” “Company,” “we” or “us”). Business Coaching is an Alias under the private limited company iMobilize Ltd. By using the site at www.topbusinesscoaching.com (the ‘Site’) or any information, materials, images, graphics, data, text, files, links, software, messages, communications, content, organization, design, compilation, magnetic translation, digital conversion, HTML, XML, Java code and other content related to the Site (collectively ‘Content’) or services provided in connection with the Site (the ‘Service’), you agree to abide by these Terms of Use, as the Company may amend them from time to time in its sole discretion. YOU AGREE THAT BY USING THE SERVICE YOU REPRESENT THAT YOU ARE AT LEAST 18 YEARS OLD AND THAT YOU ARE LEGALLY ABLE TO ENTER INTO THIS AGREEMENT.
 
 
 ### REFUND POLICY / CANCELLATION
-Business Coaching is committed to providing each customer with exceptional service. We want you to feel comfortable about transacting business with us. Due to the nature of our business and the accessibility of our products some of our programs have different refund and cancellation policies. Please find the complete details in the "refund policy" section of OutsourcedSales.com.
+Business Coaching is committed to providing each customer with exceptional service. We want you to feel comfortable about transacting business with us. Due to the nature of our business and the accessibility of our products some of our programs have different refund and cancellation policies. Please find the complete details in the "refund policy" section of www.topbusinesscoaching.com.
 
 
-If you are not completely satisfied with the product you have paid for, you may contact support@outsourcedsales.com and we will look into your request.
+If you are not completely satisfied with the product you have paid for, you may contact support@topbusinesscoaching.com and we will look into your request.
 
 
 ### PRIVACY POLICY
-The company respects your privacy and permits you to control the treatment of your personal information. A complete statement of the Company’s current privacy policy (the “Privacy Policy”) can be found on the privacy policy section on OutsourcedSales.com.
+The company respects your privacy and permits you to control the treatment of your personal information. A complete statement of the Company’s current privacy policy (the “Privacy Policy”) can be found on the privacy policy section on www.topbusinesscoaching.com.
 
 
 ### PROGRAM-SPECIFIC TERMS AND CONDITIONS

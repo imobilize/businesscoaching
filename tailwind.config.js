@@ -81,6 +81,7 @@ module.exports = {
     typography: ["dark"],
   },
   plugins: [
+    require('@headlessui/tailwindcss'),
     require("@tailwindcss/typography"),
     plugin(function ({ addBase }) {
       addBase({

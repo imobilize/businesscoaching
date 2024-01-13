@@ -25,7 +25,7 @@
             <p class="mt-4 text-body">Learn from expert business coaches who
                 have
                 already been where you want to go by building their own 7+ figure businesses. All coaches are also
-                certified mindset coaches. This guarantess that not only do we increase your business acumen, we also
+                certified mindset coaches. This guarantees that not only do we increase your business acumen, we also
                 unlock any hidden mindset restrictions holding you back.
                 <br />
                 <br />
@@ -93,9 +93,9 @@
                         <div class="h-[380px] max-w-sm rounded-lg bg-white bg-cover shadow-lg dark:bg-neutral-700 grid grid-cols-1 gap-4 overflow-clip content-end"
                             style="background-image: url('{{ $featuredimage }}');">
                             <div
-                                class="h-[160px] bg-gradient-to-t from-black to-transparent px-6 grid grid-cols-1 content-end">
+                                class="h-[160px] bg-gradient-to-t from-black to-transparent px-6 grid grid-cols-1 content-end hover:text-primaryHover">
                                 <h5
-                                    class="mb-2 text-xl font-medium leading-tight text-neutral-800 text-white dark:text-neutral-50">
+                                    class="mb-2 text-xl font-medium leading-tight text-neutral-800 text-white hover:text-primaryHover dark:text-neutral-50">
                                     Andre Barrett
                                 </h5>
                                 <p class="mb-4 text-base text-neutral-600 text-white  dark:text-neutral-200">
@@ -107,7 +107,7 @@
                     </a>
                     {{ end }}
 
-                    {{ with resources.Get "images/landing/hidden-identity.png" }}
+                    {{ with resources.Get "images/landing/business-coach-coming-soon.png" }}
                     {{ $featuredimage := (.Resize "450x webp q80").RelPermalink }}
                     <div class="h-[380px] max-w-sm rounded-lg bg-white bg-cover shadow-lg dark:bg-neutral-700 grid grid-cols-1 gap-4 content-end overflow-clip"
                         style="background-image: url('{{ $featuredimage }}');">
@@ -123,7 +123,7 @@
                     </div>
                     {{ end }}
 
-                    {{ with resources.Get "images/landing/hidden-identity.png" }}
+                    {{ with resources.Get "images/landing/business-coach-coming-soon.png" }}
                     {{ $featuredimage := (.Resize "450x webp q80").RelPermalink }}
                     <div class="h-[380px] max-w-sm rounded-lg bg-white bg-cover shadow-lg dark:bg-neutral-700 grid grid-cols-1 gap-4 content-end overflow-clip"
                         style="background-image: url('{{ $featuredimage }}');">

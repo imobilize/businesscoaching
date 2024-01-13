@@ -8,7 +8,7 @@ description: Privacy policy
 
 ### 1. INTRODUCTION  
 
-This privacy notice provides you with details of how we collect and process your personal data through your use of our site www.outsourcedsales.com. By providing us with your data, you warrant to us that you are over 13 years of age.
+This privacy notice provides you with details of how we collect and process your personal data through your use of our site www.topbusinesscoaching.com. By providing us with your data, you warrant to us that you are over 13 years of age.
 
 iMobilize Ltd/Business Coaching [is/am/are] the data controller and we are responsible for your personal data (referred to as “we”, “us” or “our” in this privacy notice)
 
@@ -18,7 +18,8 @@ Personal data means any information capable of identifying an individual. It doe
 
 We may process the following categories of personal data about you:
 
-Communication Data that includes any communication that you send to us whether that be through the contact form on our website, through email, text, social media messaging, social media posting or any other communication that you send us. We process this data for the purposes of communicating with you, for record-keeping and for the establishment, pursuance or defence of legal claims. Our lawful ground for this processing is our legitimate interests which in this case are to reply to communications sent to us, to keep records and to establish, pursue or defend legal claims.
+Communication Data that includes any communication that you send to us whether that be through the contact form on our website, through email, text, social media messaging, social media posting or any other communication that you send us. We process this data for the purposes of communicating with you, for record-keeping and for the establishment, pursuance or defence of legal claims. Our lawful ground for this processing is our legitimate interests which in this case are to reply to communications sent to us, to keep records and to establish, pursue or defend legal claims.  
+  
 Customer Data includes data relating to any purchases of goods and/or services such as your name, title, billing address, delivery address email address, phone number, contact details, purchase details and your card details. We process this data to supply the goods and/or services you have purchased and to keep records of such transactions. Our lawful ground for this processing is the performance of a contract between you and us and/or taking steps at your request to enter into such a contract.
 User Data that includes data about how you use our website and any online services together with any data that you post for publication on our website or through other online services. We process this data to operate our website and ensure relevant content is provided to you, to ensure the security of our website, to maintain back- ups of our website and/or databases and to enable publication and administration of our website, other online services and business. Our lawful ground for this processing is our legitimate interests which in this case are to enable us to properly administer our website and our business/programs.
 Technical Data that includes data about your use of our website and online services such as your IP address, your login data, details about your browser, length of visit to pages on our website, page views and navigation paths in our member's area, details about the number of times you use our website, time zone settings and other technology on the devices you use to access our website. The source of this data is from our analytics tracking system. We process this data to analyse your use of our website and other online services, to administer and protect our business and website, to deliver relevant website content and advertisements to you and to understand the effectiveness of our advertising. Our lawful ground for this processing is our legitimate interests which in this case are to enable us to properly administer our website and our business and to grow our business and to decide our marketing strategy.
@@ -51,7 +52,7 @@ Under the Privacy and Electronic Communications Regulations, we may send you mar
 
 Before we share your personal data with any third party for their own marketing purposes we will get your express consent.
 
-You can ask us or third parties to stop sending you marketing messages at any time [by logging into the website and checking or unchecking relevant boxes to adjust your marketing preferences] OR [by following the opt-out links on any marketing message sent to you or] OR by emailing us at support@outsourcedsales.com at any time].
+You can ask us or third parties to stop sending you marketing messages at any time [by logging into the website and checking or unchecking relevant boxes to adjust your marketing preferences] OR [by following the opt-out links on any marketing message sent to you or] OR by emailing us at support@topbusinesscoaching.com at any time].
 
 If you opt out of receiving marketing communications this opt-out does not apply to personal data provided as a result of other transactions, such as purchases, warranty registrations etc. 
 
@@ -111,7 +112,7 @@ You can see more about these rights at:
 
 https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/individual-rights/
 
-If you wish to exercise any of the rights set out above, please email us at support@outsourcedsales.com.
+If you wish to exercise any of the rights set out above, please email us at support@topbusinesscoaching.com.
 
 You will not have to pay a fee to access your personal data (or to exercise any of the other rights). However, we may charge a reasonable fee if your request is clearly unfounded, repetitive or excessive or refuse to comply with your request in these circumstances.
 
@@ -131,11 +132,11 @@ Full name of legal entity: Andre Barrett
 
 Job Title: Operations Director
 
-Email address: support@outsourcedsales.com
+Email address: support@topbusinesscoaching.com
 
 Postal address: Kemp House, 160 City Road, London, EC1V 2NX
 
-It is very important that the information we hold about you is accurate and up to date. Please let us know if at any time your personal information changes by emailing us at support@outsourcedsales.com.  
+It is very important that the information we hold about you is accurate and up to date. Please let us know if at any time your personal information changes by emailing us at support@topbusinesscoaching.com.  
 
 Services will be provided by:
 iMobilize Ltd

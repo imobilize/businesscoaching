@@ -22,6 +22,7 @@
     "test": "hugo"
   },
   "dependencies": {
+    "@headlessui/tailwindcss": "^0.2.0",
     "glightbox": "^3.2.0"
   }
 }
