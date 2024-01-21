@@ -4,8 +4,8 @@ date: 2024-01-13T11:10:36+08:00
 draft: false
 language: en
 featuredImage: "start-with-why-book-review-featured-image.jpg"
-image: "start-with-why-book-review-featured-image.jpg"
-images: ["start-with-why-book-review-featured-image.jpg"]
+image: images/business-coaching-cover.jpg
+images: ["images/business-coaching-cover.jpg"]
 description: "Start With Why Book Review - Simon Sinek. Conclusion, Starting with Why is Bulls**t. Start with Identity!"
 author: Andre Barrett
 authorImage: "images/authors/andre-barrett.jpg"
