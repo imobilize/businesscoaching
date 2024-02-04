@@ -1,6 +1,6 @@
 ---
 title: "Coaching Agreement"
-date: 2024-02-10T11:10:36+08:00
+date: 2024-02-1T11:10:36+08:00
 draft: false
 language: en
 description: Coaching agreement for clients
