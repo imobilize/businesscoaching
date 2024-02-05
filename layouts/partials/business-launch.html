@@ -1,12 +1,13 @@
 <section>
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="relative -mx-4 overflow-hidden bg-indigo-50 px-4 py-10 sm:-mx-6 md:mx-0 md:rounded-5xl xl:py-20">
+        <div
+            class="relative -mx-4 overflow-hidden bg-indigo-50 pt-10 lg:pb-10 sm:-mx-6 md:mx-0 md:rounded-5xl xl:py-20">
             {{ with resources.GetMatch "images/background-newsletter.jpg" }}
-            <img alt="" loading="lazy" width="919" height="1351" decoding="async" data-nimg="1"
+            <img alt="" loading="lazy" decoding="async" data-nimg="1"
                 class="absolute left-1/2 top-0 translate-x-[-10%] translate-y-[-45%] lg:translate-x-[-32%]"
                 style="color:transparent" src="{{ .RelPermalink }}">
             {{ end }}
-            <div class="relative max-w-screen-xl px-4 sm:px-2 mx-auto grid grid-cols-12 gap-x-6">
+            <div class="relative max-w-screen-xl mx-auto grid grid-cols-12 gap-x-6">
                 <div class="col-span-12 lg:col-span-6 space-y-8 sm:space-y-6 px-4 sm:px-6">
                     <span class="font-medium text-xl text-heading">Welcome to</span>
                     <h2 class="text-4xl font-semibold"><span class="text-secondary">Business Launch</span>
@@ -39,13 +40,17 @@
                 </div>
                 <div class="col-span-12 lg:col-span-6">
 
-                    <div class="w-full sm:mt-20 xl:mt-0 rounded-2xl overflow-hidden">
+                    <div class="w-full mt-6 sm:mt-20 xl:mt-0 lg:pr-4 overflow-hidden">
                         {{ with resources.GetMatch "images/black-owned-business.jpg" }}
-                        {{ $small := (.Resize "400x webp q100").RelPermalink }}
-                        {{ $medium := (.Resize "550x webp q100").RelPermalink }}
-                        {{ $large := (.Resize "900x webp q100").RelPermalink }}
-                        {{ $featuredimage := (.Resize "1500x webp q100").RelPermalink }}
-                        <img src="{{ $featuredimage }}"
+                        {{ $small := (.Resize "400x webp q90").RelPermalink }}
+                        {{ $medium := (.Resize "550x webp q90").RelPermalink }}
+                        {{ $large := (.Resize "900x webp q90").RelPermalink }}
+                        {{ $featuredimage := (.Resize "1200x webp q90").RelPermalink }}
+                        <img src="{{ $featuredimage }}" srcset="
+                  {{- with $small -}}, {{.}} 400w{{- end -}}
+                  {{- with $medium -}}, {{.}} 550w{{- end -}}
+                  {{- with $large -}}, {{.}} 768w{{- end -}}
+                  {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}"
                             alt="Black owned business after business coaching 6 month accelerator" class="w-full">
                         {{ end }}
                     </div>
@@ -56,9 +61,9 @@
 </section>
 
 
-<section class="max-w-screen-xl mx-auto py-16 px-5">
+<section class="max-w-screen-xl mx-auto py-0 md:py-16 px-5 md:px-10">
     <div class="mt-16 md:mt-0">
-        <h3 class="text-2xl lg:text-3xl font-bold lg:tracking-tight text-heading">
+        <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold lg:tracking-tight text-heading">
             Everything you need to scale a business
         </h3>
         <p class="text-lg mt-4 text-body">
@@ -66,7 +71,7 @@
             the next level.
         </p>
     </div>
-    <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 mt-16 gap-8 md:gap-16">
         <div class="flex gap-4 items-start">
             <div class="">
                 <svg class="w-8 h-8 mt-1 text-green-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -76,7 +81,7 @@
                 </svg>
             </div>
             <div>
-                <h4 class="font-semibold text-lg">Frameworks And Method</h4>
+                <h4 class="font-semibold text-base md:text-lg">Frameworks And Method</h4>
                 <p class="text-body mt-2 leading-relaxed">Apply tried and tested methods that are battle hardened
                     and proven. Use the templates and guides to shortcut the process and get quick wins.</p>
             </div>
@@ -90,7 +95,7 @@
                 </svg>
             </div>
             <div>
-                <h4 class="font-semibold text-lg">Actionable Content</h4>
+                <h4 class="font-semibold text-base md:text-lg">Actionable Content</h4>
                 <p class="text-body mt-2 leading-relaxed">You won't just be learning. You'll be applying the
                     content provided to your
                     business to get instant results.</p>
@@ -105,7 +110,7 @@
                 </svg>
             </div>
             <div>
-                <h4 class="font-semibold text-lg">Community</h4>
+                <h4 class="font-semibold text-base md:text-lg">Community</h4>
                 <p class="text-body mt-2 leading-relaxed">No need to feel like you are alone on your journey. The
                     community support is there to uplift you and share how to overcome challenges you might face.
                 </p>
@@ -120,7 +125,7 @@
                 </svg>
             </div>
             <div>
-                <h4 class="font-semibold text-lg">What's Working Now</h4>
+                <h4 class="font-semibold text-base md:text-lg">What's Working Now</h4>
                 <p class="text-body mt-2 leading-relaxed">No need to waste your time trying to get outdated
                     business strategies to work. You get a behind the scenes look at what's working now so you can focus
                     only on what is going to work for you.</p>
@@ -135,7 +140,7 @@
                 </svg>
             </div>
             <div>
-                <h4 class="font-semibold text-lg">Ability To Ask Questions</h4>
+                <h4 class="font-semibold text-base md:text-lg">Ability To Ask Questions</h4>
                 <p class="text-body mt-2 leading-relaxed">No more being hindered by not knowing. You'll get
                     immediate answers to questions to ensure you never get stuck on your journey.</p>
             </div>
@@ -149,7 +154,7 @@
                 </svg>
             </div>
             <div>
-                <h4 class="font-semibold text-lg">Motivation</h4>
+                <h4 class="font-semibold text-base md:text-lg">Motivation</h4>
                 <p class="text-body mt-2 leading-relaxed">It's natural to run out of steam. Now you will have ways
                     to get back to being productive and staying on track to reach your goals.</p>
             </div>
@@ -159,10 +164,10 @@
 
 
 {{ $bgpattern := resources.GetMatch "images/landing/bg-tools.webp" }}
-<section class="bg-cover relative max-w-full sm:mx-4 xl:mx-10 py-8 shadow sm:rounded-2xl overflow-hidden"
+<section class="bg-cover relative max-w-full sm:mx-4 xl:mx-10 mt-10 sm:mt-0 py-8 shadow sm:rounded-2xl overflow-hidden"
     style="background-image: url('{{ $bgpattern.RelPermalink }}');">
     <div class="w-full flex flex-col items-center">
-        <h3 data-aos="flip-down" class="text-2xl sm:text-3xl font-semibold text-center">
+        <h3 data-aos="flip-down" class="text-xl sm:text-2xl md:text-3xl font-semibold text-center">
             Getting started is easy
         </h3>
         <div
@@ -208,7 +213,7 @@
                 class="hidden lg:inline-block absolute top-32 right-64 xl:right-[22rem] w-24 xl:w-[9.5rem]">
         </div>
         <div class="pt-6 my-6 mx-auto">
-            <a class="px-5 py-3 text-xl text-center font-medium text-white bg-primary border border-primaryHover rounded-md shadow hover:bg-primaryHover focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary"
+            <a class="px-5 py-3 sm:text-xl text-center font-medium text-white bg-primary border border-primaryHover rounded-md shadow hover:bg-primaryHover focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary"
                 href="./book-consultation" data-opf-trigger="">Book Your
                 Free Consultation
             </a>

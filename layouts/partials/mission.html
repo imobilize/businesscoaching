@@ -1,4 +1,3 @@
-<!-- Testimonial/stats section -->
 <div class="relative my-4">
   <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-start lg:gap-24 lg:px-8">
     <div class="relative sm:py-8 lg:py-0">
@@ -17,14 +16,18 @@
         </svg>
       </div>
       <div class="relative max-w-md px-4 py-6 mx-auto sm:max-w-3xl sm:px-6 lg:max-w-none lg:px-0 lg:py-20">
-        <!-- Testimonial card-->
         <div class="relative overflow-hidden shadow-xl rounded-2xl">
-          {{ $missionimage := resources.Get "images/denlea.jpg" }}
-          {{ with $missionimage }}
-          {{ with .Resize "560x webp q90" }}
-          <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="object-cover w-full h-full"
-            alt="Our mission with business coaching" loading="lazy" />
-          {{ end }}
+          {{ with resources.Get "images/denlea.jpg" }}
+          {{ $small := (.Resize "300x webp q80").RelPermalink }}
+          {{ $medium := (.Resize "550x webp q80").RelPermalink }}
+          {{ $large := (.Resize "700x webp q80").RelPermalink }}
+          {{ $featuredimage := (.Resize "900x webp q80").RelPermalink }}
+          <img src="{{ .RelPermalink }}" srcset="
+                  {{- with $small -}}, {{.}} 320w{{- end -}}
+                  {{- with $medium -}}, {{.}} 550w{{- end -}}
+                  {{- with $large -}}, {{.}} 768w{{- end -}}
+                  {{- with $featuredimage -}}, {{.}} 900w{{- end -}}" width="{{ .Width }}" height="{{ .Height }}"
+            class="object-cover w-full h-full" alt="Our mission with business coaching" loading="lazy" />
           {{ end }}
 
         </div>
@@ -33,8 +36,8 @@
 
     <div class="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0">
       <!-- Content area -->
-      <div class="md:pt-12 sm:pt-6 lg:pt-20">
-        <h2 class="text-3xl font-medium sm:text-4xl tracking-tight text-heading">
+      <div class="pt-0 lg:pt-20">
+        <h2 class="font-medium text-xl sm:text-2xl md:text-3xl lg:text-4xl tracking-tight text-heading">
           Being A Business Owner Is A Calling</h2>
         <div class="mt-6 space-y-6 text-body leading-7">
           <p class="">
@@ -63,7 +66,7 @@
             You are called to follow your passion. This allows you to do what you love and align your work with your
             interests.
           </p>
-          <p class="font-bold text-2xl">
+          <p class="font-bold text-lg sm:text-xl md:text-2xl">
             Are you going to answer the call?
           </p>
         </div>
@@ -75,13 +78,13 @@
 </div>
 
 <section>
-  <div class="items-center w-full px-5 py-24 mx-auto md:px-12 lg:px-16 max-w-7xl">
+  <div class="items-center w-full px-5 py-10 md:py-16 lg:py-24 mx-auto md:px-12 lg:px-16 max-w-7xl">
     <div>
       <div class="max-w-2xl">
-        <h3 class="text-2xl font-medium tracking-tight text-heading sm:text-4xl">
+        <h3 class="font-medium text-xl sm:text-2xl md:text-3xl lg:text-4xl tracking-tight text-heading">
           Trying to grow a business can be overwhelming
         </h3>
-        <p class="max-w-2xl mt-4 text-body text-lg tracking-tight">
+        <p class="max-w-2xl mt-4 text-body sm:text-lg tracking-tight">
           Ever heard of the guy that built his house on sand?<br />
           Unless you start your business with a solid foundation it will quickly fall apart.
         </p>
@@ -90,7 +93,7 @@
     <div class="w-full mx-auto mt-12 text-left">
       <div class="relative items-center gap-12 m-auto lg:inline-flex md:order-first">
         <div class="mx-auto lg:max-w-7xl">
-          <ul role="list" class="grid grid-cols-2 gap-4 list-none md:grid-cols-3 lg:gap-12">
+          <ul role="list" class="grid grid-cols-1 sm:grid-cols-2 list-none lg:grid-cols-3 gap-6 lg:gap-12">
             <li class="flex flex-row">
               <svg class="w-5 h-5 shrink-0 mt-1" fill="#ff0000" version="1.1" id="Capa_1"
                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -103,7 +106,7 @@
                   </path>
                 </g>
               </svg>
-              <p class="text-lg ml-2 font-medium leading-6 text-black">
+              <p class="sm:text-lg ml-2 leading-6 text-black">
                 Sleepless nights wondering if your cash will cover your next set of expenses.
               </p>
             </li>
@@ -119,7 +122,7 @@
                   </path>
                 </g>
               </svg>
-              <p class="ml-2 text-lg font-medium leading-6 text-black">
+              <p class="ml-2 sm:text-lg leading-6 text-black">
                 Wanting to grow but hindered by lack of resources.
               </p>
             </li>
@@ -135,9 +138,10 @@
                   </path>
                 </g>
               </svg>
-              <p class="ml-2 text-lg font-medium leading-6 text-black">
-                Guessing what to do next without certainty that it will actually work.
+              <p class="ml-2 sm:text-lg leading-6 text-black">
+                Living the feast and famine cycle without a consistent pipeline to bring in dependable sales.
               </p>
+
             </li>
             <li class="flex flex-row">
               <svg class="w-5 h-5 shrink-0 mt-1" fill="#ff0000" version="1.1" id="Capa_1"
@@ -151,8 +155,8 @@
                   </path>
                 </g>
               </svg>
-              <p class="ml-2 text-lg font-medium leading-6 text-black">
-                Living the feast and famine cycle without a consistent pipeline to bring in dependable sales.
+              <p class="ml-2 sm:text-lg leading-6 text-black">
+                Guessing what to do next without certainty that it will actually work.
               </p>
             </li>
 
@@ -168,7 +172,7 @@
                   </path>
                 </g>
               </svg>
-              <p class="ml-2 text-lg font-medium leading-6 text-black">
+              <p class="ml-2 sm:text-lg leading-6 text-black">
                 Suffering the stress from working 60+ hours a week and still not having enough time to get it all done.
               </p>
 
