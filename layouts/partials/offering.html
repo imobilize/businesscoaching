@@ -1,7 +1,8 @@
-<section id="schedule" aria-label="Schedule" class="py-20 sm:py-32">
+<section id="schedule" aria-label="Schedule" class="py-10 md:py-20">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="mx-auto max-w-xl lg:mx-0 lg:max-w-4xl lg:pr-24">
-            <h2 class="text-3xl font-medium tracking-tighter text-heading sm:text-4xl">What's included
+            <h2 class="font-medium text-xl sm:text-2xl md:text-3xl lg:text-4xl tracking-tighter text-heading">What's
+                included
                 when you enroll?</h2>
             <p class="mt-4 tracking-tight text-body">
                 You will receive every kind of support necessary to take you to where you want to go. Your learning
@@ -23,12 +24,17 @@
         </div>
         {{ end }}
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
-            <div x-data="{ tab: '#tab1' }" class="mx-auto grid max-w-2xl grid-cols-1 gap-y-6 sm:grid-cols-2 lg:hidden">
-                <div class="-mx-4 flex gap-x-4 gap-y-10 overflow-x-auto pb-4 pl-4 sm:mx-0 sm:flex-col sm:pb-0 sm:pl-0 sm:pr-8"
+            <div x-data="{ 
+                tab: '#tab1',
+                activeClasses: 'bg-slate-50 border rounded-t',
+                inactiveClasses: 'opacity-70'
+         }" class="mx-auto grid max-w-2xl grid-cols-1 gap-y-6 sm:grid-cols-2 lg:hidden">
+                <div class="-mx-4 flex gap-x-4 gap-y-10 overflow-x-auto pb-4 px-4 sm:mx-0 sm:flex-col sm:pb-0 sm:pl-0 sm:pr-8"
                     role="tablist" aria-orientation="vertical">
 
-                    <div class="relative w-3/4 flex-none pr-4 sm:w-auto sm:pr-0">
-                        <h3 class="text-2xl font-semibold tracking-tight text-blue-900">
+                    <div :class="tab === '#tab1' ? activeClasses : inactiveClasses"
+                        class="relative w-3/4 flex-none pr-4 sm:w-auto sm:pr-0 pl-2 py-2">
+                        <h3 class="text-lg sm:text-xl md:text-2xl font-semibold tracking-tight text-blue-900">
                             <button x-on:click.prevent="tab='#tab1'" class="ui-not-focus-visible:outline-none"
                                 id="headlessui-tabs-tab-:R1" role="tab" type="button" aria-selected="true" tabindex="0"
                                 data-headlessui-state="selected" aria-controls="headlessui-tabs-panel-:R1">
@@ -40,8 +46,9 @@
                             Reprogram your mind and remove any blocks stopping
                             you from reaching your highest potential</p>
                     </div>
-                    <div class="relative w-3/4 flex-none pr-4 sm:w-auto sm:pr-0 opacity-70">
-                        <h3 class="text-2xl font-semibold tracking-tight text-blue-900">
+                    <div :class="tab === '#tab2' ? activeClasses : inactiveClasses"
+                        class="relative w-3/4 flex-none pr-4 sm:w-auto sm:pr-0 pl-2 py-2">
+                        <h3 class="text-lg sm:text-xl md:text-2xl font-semibold tracking-tight text-blue-900">
                             <button x-on:click.prevent="tab='#tab2'" class="ui-not-focus-visible:outline-none"
                                 id="headlessui-tabs-tab-:R2" role="tab" type="button" aria-selected="false"
                                 tabindex="-1" data-headlessui-state="" aria-controls="headlessui-tabs-panel-:R2"><span
@@ -52,8 +59,9 @@
                             to
                             reach 7+ figures and beyond</p>
                     </div>
-                    <div class="relative w-3/4 flex-none pr-4 sm:w-auto sm:pr-0 opacity-70">
-                        <h3 class="text-2xl font-semibold tracking-tight text-blue-900">
+                    <div :class="tab === '#tab3' ? activeClasses : inactiveClasses"
+                        class="relative w-3/4 flex-none pr-4 sm:w-auto sm:pr-0 pl-2 py-2">
+                        <h3 class="text-lg sm:text-xl md:text-2xl font-semibold tracking-tight text-blue-900">
                             <button x-on:click.prevent="tab='#tab3'" class="ui-not-focus-visible:outline-none"
                                 id="headlessui-tabs-tab-:R3" role="tab" type="button" aria-selected="false"
                                 tabindex="-2" data-headlessui-state="" aria-controls="headlessui-tabs-panel-:R3"><span
