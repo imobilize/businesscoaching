@@ -66,7 +66,7 @@
 
             <!-- START - We recommend to place the below code where you want the form in your website html  -->
             <div class="sib-form" style="text-align: center;
-background-color: transparent;                                 ">
+         background-color: transparent;                                 ">
               <div id="sib-form-container" class="sib-form-container">
                 <div id="error-message" class="sib-form-message-panel"
                   style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;max-width:540px;">
@@ -97,7 +97,7 @@ background-color: transparent;                                 ">
                 <div id="sib-container" class="sib-container--large sib-container--vertical"
                   style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:3px; border-width:1px; border-color:#C0CCD9; border-style:solid; direction:ltr">
                   <form id="sib-form" method="POST"
-                    action="https://473c84b3.sibforms.com/serve/MUIFADokZYEwk9fVjDWlbZ_a59yP6GyTNisE67xOO9VqzJN7W0okJ84GYxeyKK1WcAynyznhYbXpJr1jpcWViQrGFUyHDrPfYVt1jlJE4YwVICMgWhLLWw86oT1HGqvqtN5C9MCjSuA_SOOV5Y13cUqEA1_jwkAfLMgZVlShDTP2LcpkMEyPY0N-shZnDhu5T_Df_z-s2qwl178q"
+                    action="https://473c84b3.sibforms.com/serve/MUIFAGBpsRHa3cr5lhnNrOf4UtP3OZyu4poVnjO3BBEJmK8KvI73WAgXpnS0ILJJ8rXgQZl5hjdJ1T_HzWiJ53v7-8KQaoTI-p9vvWCkMRm95Xc_XEe1M0hbu8es6M1cvh3P4zxBql3RWZg9qmsk-13jyokq2N-DmRqJ04E2Dki9VTPCxnGXHWWir6zj8NF2xOqLilIO5ZK0eG-d"
                     data-type="subscription">
                     <div style="padding: 8px 0;">
                       <div class="sib-input sib-form-block">
@@ -133,6 +133,26 @@ background-color: transparent;                                 ">
                             </div>
                           </div>
 
+                          <label class="entry__error entry__error--primary"
+                            style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding: 8px 0;">
+                      <div class="sib-captcha sib-form-block">
+                        <div class="form__entry entry_block">
+                          <div class="form__label-row ">
+                            <script>
+                              function handleCaptchaResponse() {
+                                var event = new Event('captchaChange');
+                                document.getElementById('sib-captcha').dispatchEvent(event);
+                              }
+                            </script>
+                            <div class="g-recaptcha sib-visible-recaptcha" id="sib-captcha"
+                              data-sitekey="6Lc5Jm4pAAAAADUyyj91YrSFCWDlQ4X6QgftrbeF"
+                              data-callback="handleCaptchaResponse" style="direction:ltr"></div>
+                          </div>
                           <label class="entry__error entry__error--primary"
                             style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
                           </label>
@@ -222,8 +242,6 @@ background-color: transparent;                                 ">
 </section>
 
 
-
-
 <!-- START - We recommend to place the below code in footer or bottom of your website html  -->
 <script>
   window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
@@ -249,6 +267,7 @@ background-color: transparent;                                 ">
 
 <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
 
+<script src="https://www.google.com/recaptcha/api.js?hl=en"></script>
 
 <!-- END - We recommend to place the above code in footer or bottom of your website html  -->
 <!-- End Brevo Form -->
