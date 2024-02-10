@@ -1,13 +1,13 @@
 ---
-title: Contact Form Sent
-date: 2022-12-18T03:10:36.000Z
+title: Newsletter Confirmation
+date: 2023-12-18T03:10:36.000Z
 draft: false
 sitemapExclude: true
 language: en
-description: Contact us form submitted
+description: Newsletter subscription confirmation
 ---
 
-## We have received your enquiry
+## You're In
 
 Please check your email to ensure you have received a response from us. 
 
