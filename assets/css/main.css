@@ -45,26 +45,11 @@ EmojiSymbols;
 }
 
 .h5 {
-    @apply text-xl font-medium;
+    @apply text-sm sm:text-base md:text-lg lg:text-xl font-semibold;
 }
 
 .h6 {
-    @apply text-lg font-medium;
-}
-
-
-@screen md {
-    .h1 {
-        @apply text-6xl;
-    }
-
-    .h2 {
-        @apply text-5xl;
-    }
-
-    .h3 {
-        @apply text-4xl;
-    }
+    @apply text-sm sm:text-base md:text-lg lg:text-xl font-medium;
 }
 
 /* Buttons */
