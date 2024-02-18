@@ -212,15 +212,18 @@
                                     <span class="text-blue-600">Disrupting</span>
                                     The Branding Industy
                                 </h3>
-                                <p class="mt-4 text-base sm:text-lg text-body">Creating a strong brand is the most
-                                    effective
-                                    way to
-                                    attract customers and make more sales. We wrote a book to ensure you get this
-                                    right
-                                    from
-                                    the start.
-                                    You can pick up
-                                    the book and the video course to see what it involves.</p>
+                                <p class="mt-4 text-base sm:text-lg text-body mb-4 sm:mb-8">EVERY SUCCESSFUL, WELL-KNOWN
+                                    BRAND IS
+                                    USING THESE MIND-BLOWING TACTICS. They are like
+                                    secret, magic tricks that have a potent effect on the unsuspecting customer. Yet big
+                                    companies have been knowingly using these spellbinding tactics for many years.
+                                    Employing these methods has allowed them to gain a large market share and command
+                                    extraordinary profits. All while their competition fights over the scraps.
+                                </p>
+                                <p class="mt-4 text-base sm:text-lg text-body">
+                                    In Branding For Profit I share what these tactics are and how you can use them
+                                    for yourself.
+                                </p>
 
                             </div>
                             <div class="flex justify-center text-blue-600 lg:justify-start">
@@ -257,7 +260,7 @@
                                     read. Highly
                                     recommend.”</p>
                             </blockquote>
-                            <figcaption class="mt-2 text-sm text-slate-500"><strong
+                            <figcaption class="mt-2 text-sm text-slate-500 mb-8 sm:mb-0"><strong
                                     class="font-medium text-blue-600 before:content-['—_']">Du El</strong>,
                                 Entrepreneur, UK
                             </figcaption>
@@ -268,64 +271,88 @@
 
 
             <!-- Story -->
-            <section class="">
+            <section class="py-10 sm:py-12">
                 <div class="max-w-5xl mx-auto px-4 sm:px-6">
-                    <div class="pb-12 md:pb-20">
+                    <div class="max-w-3xl mx-auto">
+                        <h2 class="h2 mb-3">Think You Know Branding? <span class="text-red-600">Think Again!</span>
+                            </h3>
+                            <p class="text-sm sm:text-base md:text-lg mb-4 sm:mb-8">
+                                £150,000! That's what I had spent the year I launched my startup. And after all the
+                                time and resources I had poured into getting it off the ground, what did I have to
+                                show
+                                for it?
+                                It had all started so well too. (Or so I thought). I had chosen a great name that I
+                                thought would resonate with the 'cool kids'. The name was a slang term that people
+                                of my age and ethnicity would use you all the time. I then paid loads of money to a
+                                brand agency to create the logo. After a few iterations, they finally came up with
+                                something I was happy with.<br />
+                            </p>
+                            <p class="text-sm sm:text-base md:text-lg">
+                                <strong>What did I do next?</strong><br />
+                                I did the natural thing everyone does when
+                                they believe they have a great brand. I put the logo everywhere. My website, social
+                                media, flyers, coasters and even condoms!
+                            </p>
+                            <p class="text-sm sm:text-base md:text-lg mb-4 sm:mb-8">
+                                Of course, I wasn't alone in this endeavor. I hired some inexperienced software
+                                developers and
+                                personally mentored and trained them. In doing so I discovered I had a real talent
+                                for teaching and making things easy to understand. They eventually became great
+                                software engineers.
 
-                        <div class="max-w-3xl mx-auto">
-                            <h2 class="h2 mb-3">Think You Now Branding? <span class="text-red-600">Think Again!</span>
-                                </h3>
-                                <p class="text-lg text-gray-600 mb-8">
-                                    Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat auctor urna
-                                    nunc
-                                    id cursus metus aliquam eleifend, arcu dictum varius duis at consectetur lorem donec
-                                    massa sapien, sed risus ultricies tristique nulla aliquet. Morbi tristique senectus
-                                    et
-                                    netus et, nibh nisl condimentum id venenatis a condimentum vitae sapien.
-                                </p>
-                                <p class="text-lg text-gray-600 mb-8">
-                                    Quam pellentesque nec nam aliquam sem et tortor consequat, pellentesque adipiscing
-                                    commodo elit at imperdiet. Semper auctor neque vitae tempus quam pellentesque nec.
-                                    Amet
-                                    dictum sit amet justo donec enim diam varius sit amet mattis vulputate enim nulla
-                                    aliquet porttitor.
-                                </p>
-                        </div>
+                                Below you can see me in a picture with my first employees.
+                            </p>
+                    </div>
 
-                        <div class="sm:flex">
-                            <figure class="flex shrink-0 max-w-none sm:max-w-xs lg:max-w-none mb-8 sm:mb-0">
+                    <div class="sm:flex">
+                        <figure class="flex shrink-0 max-w-none sm:max-w-xs lg:max-w-none mb-8 sm:mb-0">
 
-                                {{ with resources.Get "images/landing/brand-challenge/startup-office-space.jpg" }}
-                                {{ $small := (.Resize "350x webp q80").RelPermalink }}
-                                {{ $medium := (.Resize "500x webp q80").RelPermalink }}
-                                {{ $large := (.Resize "700x webp q80").RelPermalink }}
-                                {{ $featuredimage := (.Resize "900x webp q80").RelPermalink }}
-                                <img class="grow self-start rounded" src="{{ $medium}}" width="435" height="326"
-                                    srcset="{{ $small }} 350w, {{ $medium }} 500w, {{ $large }} 700w, {{ $featuredimage }} 900w">
-                                {{ end }}
+                            {{ with resources.Get "images/landing/brand-challenge/startup-office-space.jpg" }}
+                            {{ $small := (.Resize "350x webp q80").RelPermalink }}
+                            {{ $medium := (.Resize "500x webp q80").RelPermalink }}
+                            {{ $large := (.Resize "700x webp q80").RelPermalink }}
+                            {{ $featuredimage := (.Resize "900x webp q80").RelPermalink }}
+                            <img class="grow self-start rounded" src="{{ $medium}}" width="435" height="326"
+                                srcset="{{ $small }} 350w, {{ $medium }} 500w, {{ $large }} 700w, {{ $featuredimage }} 900w">
+                            {{ end }}
 
-                            </figure>
-                            <div class="sm:ml-8 lg:ml-16">
-                                <h4 class="h4 mb-2">2017 - 2020</h4>
-                                <p class="text-lg text-gray-600 mb-8">
-                                    Quam pellentesque nec nam aliquam sem et tortor consequat, pellentesque adipiscing
-                                    commodo elit at imperdiet. Semper auctor neque vitae tempus quam pellentesque nec.
-                                    Amet dictum sit amet justo donec enim diam varius sit amet mattis vulputate enim
-                                    nulla aliquet porttitor.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="max-w-3xl mx-auto">
-                            <p class="text-lg text-gray-600">
-                                Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat auctor urna nunc
-                                id cursus metus aliquam eleifend, arcu dictum varius duis at consectetur lorem donec
-                                massa sapien, sed risus ultricies tristique nulla aliquet. Morbi tristique senectus et
-                                netus et, nibh nisl condimentum id venenatis a condimentum vitae sapien.
+                        </figure>
+                        <div class="sm:ml-8 lg:ml-16">
+                            <h5 class="h5 mb-2">My First Major Product Launch Was A Disaster!</h5>
+                            <p class="text-sm sm:text-base md:text-lg mb-4 sm:mb-8">
+                                Like most Startup business owners I come across, I thought that's what branding
+                                consisted of. A name, a logo and some nice colours. And yes, the brand elements are
+                                a core part of a brand. But if you don't know how to choose those elements to
+                                resonate with your target audience, you will never attract your perfect customer.
+                                This is precisely what happened to me.
+                            </p>
+                            <p class="text-sm sm:text-base md:text-lg mb-4 sm:mb-8">
+                                So there I was after a year with no customers using my events software. I had run
+                                out of money and I had zero
+                                hope of making my initial investment back. Being in the position of having to let my
+                                employees go
+                                is one the most painful memories I have to date.
                             </p>
                         </div>
-
                     </div>
+
+                    <div class="max-w-3xl mx-auto">
+                        <p class="text-sm sm:text-base md:text-lg mb-4 sm:mb-8">
+                            This story isn't unqiue to me either. The Startup space is littered with these kind of
+                            failures. There's a graveyard just waiting for those that don't create an awesome brand
+                            right from the start.
+                        </p>
+                        <p class="text-sm sm:text-base md:text-lg">
+                            After that failure I spent a lot of time studying the topic. I discovered that a brand
+                            goes so much deeper than a name and a logo. I came across strategies and tactics that
+                            use human psychology to influence your prospects. I uncovered how the best brands turned
+                            their customers into repeat buyers. I figured out the secrets that high paid brand
+                            agencies share with their clients.
+                            Then I became determined to share these secrets and everything else I had uncovered with
+                            other entrepreneurs. That's how the Branding For Profit book was born.
+                        </p>
+                    </div>
+
                 </div>
             </section>
 
@@ -334,12 +361,12 @@
                 <div class="bg-dark text-white">
                     <div
                         class="container flex flex-col items-center px-4 py-16 pb-24 mx-auto text-center lg:pb-56 md:py-14 md:px-10 lg:px-32">
-                        <h2 class="h2 xl:max-w-3xl ">Provident
-                            blanditiis cum exercitationem</h2>
-                        <p class="mt-6 mb-8 text-lg sm:mb-12 xl:max-w-3xl dark:text-gray-900">
-                            will walk you through
-                            step-by-step How To
-                            “Bootstrap” Your Idea And Launch It Into The World With A Funnel...!</p>
+                        <h2 class="h2 xl:max-w-3xl ">The <span class="text-teal-500">'Branding For Profit'</span>
+                            Challenge Will Walk You Through
+                            Step-By-Step...</h2>
+                        <h5 class="mt-6 mb-8 h5 sm:mb-12 xl:max-w-3xl dark:text-gray-900">
+                            Over 5 days you will create an awesome brand that attracts your perfect customer regardless
+                            of the industry you are in!</h5>
                     </div>
                 </div>
                 {{ with resources.Get
@@ -368,42 +395,54 @@
                             class="p-4 rounded border border-gray-200 transition duration-300 ease-in-out bg-white shadow-sm hover:bg-white hover:shadow-lg mb-3">
                             <h5 class="h5">Day 1</h5>
                             <p>
-                                <span class="font-semibold">Picking the best name.</span>
+                                <span class="font-semibold">Picking the Perfect Name.</span> How do you choose a name
+                                that
+                                allows customers to find you easily online? How do you make sure the name will grab
+                                people's attention and find out more about what you offer? We cover this on day one.
                             </p>
                         </div>
 
                         <!-- 2nd Item -->
                         <div
                             class="p-4 rounded border border-gray-200 transition duration-300 ease-in-out bg-white shadow-sm hover:bg-white hover:shadow-lg mb-3">
-                            <h5 class="h5">Day 1</h5>
+                            <h5 class="h5">Day 2</h5>
                             <p>
-                                <span class="font-semibold">Picking the best name.</span>
+                                <span class="font-semibold">Designing a Killer Logo.</span> How do you create a logo
+                                without breaking the bank? How do you know which colours to use and what will work with
+                                your audience? Find out on day two.
                             </p>
                         </div>
                         <!-- 3rd Item -->
                         <div
                             class="p-4 rounded border border-gray-200 transition duration-300 ease-in-out bg-white shadow-sm hover:bg-white hover:shadow-lg mb-3">
-                            <h5 class="h5">Day 1</h5>
+                            <h5 class="h5">Day 3</h5>
                             <p>
-                                <span class="font-semibold">Picking the best name.</span>
+                                <span class="font-semibold">The Story Selling System.</span> How do you create raving
+                                fans that talk about you? How do you sell without coming across salesy? I cover how to
+                                use story to achive these goals on day three.
                             </p>
                         </div>
+                        <!-- 4th Item -->
+                        <div
+                            class="p-4 rounded border border-gray-200 transition duration-300 ease-in-out bg-white shadow-sm hover:bg-white hover:shadow-lg mb-3">
+                            <h5 class="h5">Day 4</h5>
+                            <p>
+                                <span class="font-semibold">Social Media and Online tactics.</span> How do you grab
+                                people's attention on social media? How do elevate your brand by crafting a message that
+                                people want to read? These tactics and more covered on day four.
+                            </p>
+                        </div>
+
 
                         <!-- 4th Item -->
                         <div
                             class="p-4 rounded border border-gray-200 transition duration-300 ease-in-out bg-white shadow-sm hover:bg-white hover:shadow-lg mb-3">
-                            <h5 class="h5">Day 1</h5>
+                            <h5 class="h5">Day 5</h5>
                             <p>
-                                <span class="font-semibold">Picking the best name.</span>
-                            </p>
-                        </div>
-
-                        <!-- 4th Item -->
-                        <div
-                            class="p-4 rounded border border-gray-200 transition duration-300 ease-in-out bg-white shadow-sm hover:bg-white hover:shadow-lg mb-3">
-                            <h5 class="h5">Day 1</h5>
-                            <p>
-                                <span class="font-semibold">Picking the best name.</span>
+                                <span class="font-semibold">Your Successful Launch.</span> What do you need to do to
+                                make sure your product or service launch is successful? Want to know if your idea is
+                                going to work before you invest time and resources? That's what you will find out on day
+                                five.
                             </p>
                         </div>
 
@@ -412,61 +451,67 @@
                 </div>
             </section>
 
-            <section class="bg-slate-white text-dark sm:pt-6 md:pt-10 lg:pt-14 border-t border-b">
+            <section class="bg-slate-white text-dark py-10 sm:py-12 px-4 border-t border-b">
                 <div class="max-w-xl mx-auto">
                     <div class="flex justify-center">
-                        <h3 class="h3 text-center">Branding For Profit Is
-                            Turning Busines Owners Into<br /> Elite Entrepreneurs
+                        <h3 class="h3 text-center"><span class="underline decoration-teal-500">Branding For
+                                Profit</span> Is
+                            Turning Business Owners Into<br /> <span class="text-blue-600">Elite Entrepreneurs</span> -
+                            In Every Industry
                         </h3>
                     </div>
                     <div class="grid sm:grid-cols-2 gap-16 py-8">
                         <article class="flex flex-col">
                             <!-- Article Image -->
-                            {{ with resources.Get "images/landing/brand-challenge/kie.jpg" }}
-                            {{ $small := (.Resize "200x webp q90").RelPermalink }}
-                            {{ $medium := (.Resize "350x webp q90").RelPermalink }}
-                            {{ $large := (.Resize "500x webp q90").RelPermalink }}
-                            {{ $featuredimage := (.Resize "700x webp q90").RelPermalink }}
-                            <img src="{{ $featuredimage }}" srcset="
+                            <div class="w-1/2 sm:w-full mx-auto">
+                                {{ with resources.Get "images/landing/brand-challenge/kie.jpg" }}
+                                {{ $small := (.Resize "200x webp q90").RelPermalink }}
+                                {{ $medium := (.Resize "350x webp q90").RelPermalink }}
+                                {{ $large := (.Resize "500x webp q90").RelPermalink }}
+                                {{ $featuredimage := (.Resize "700x webp q90").RelPermalink }}
+                                <img src="{{ $featuredimage }}" srcset="
                   {{- with $small -}}, {{.}} 200w{{- end -}}
                   {{- with $medium -}}, {{.}} 350w{{- end -}}
                   {{- with $large -}}, {{.}} 500w{{- end -}}
                   {{- with $featuredimage -}}, {{.}} 700w{{- end -}}" alt="Kie with Branding For Profit Book"
-                                class="w-full">
-                            {{ end }}
+                                    class="w-full">
+                                {{ end }}
+                            </div>
                             <div class="flex flex-col justify-start py-6">
                                 <p class="pb-6">
-                                    iaculis massa. Sed ornare ligula lacus, quis iaculis dui porta volutpat. In sit amet
-                                    posuere magna..
+                                    "I started a clothing brand after reading this book. Now I'm making consistent sales
+                                    using the recommended strategies"
                                 </p>
                                 <p class="uppercase text-gray-800 hover:text-black">
-                                    Continue Reading
+                                    <span class="font-medium">Kie Kariuku</span> - Lovaholics
                                 </p>
                             </div>
                         </article>
 
                         <article class="flex flex-col">
                             <!-- Article Image -->
-                            {{ with resources.Get "images/landing/brand-challenge/susan.jpg" }}
-                            {{ $small := (.Resize "200x webp q90").RelPermalink }}
-                            {{ $medium := (.Resize "350x webp q90").RelPermalink }}
-                            {{ $large := (.Resize "500x webp q90").RelPermalink }}
-                            {{ $featuredimage := (.Resize "700x webp q90").RelPermalink }}
-                            <img src="{{ $featuredimage }}" srcset="
+                            <div class="w-1/2 sm:w-full mx-auto">
+                                {{ with resources.Get "images/landing/brand-challenge/susan.jpg" }}
+                                {{ $small := (.Resize "200x webp q90").RelPermalink }}
+                                {{ $medium := (.Resize "350x webp q90").RelPermalink }}
+                                {{ $large := (.Resize "500x webp q90").RelPermalink }}
+                                {{ $featuredimage := (.Resize "700x webp q90").RelPermalink }}
+                                <img src="{{ $featuredimage }}" srcset="
                   {{- with $small -}}, {{.}} 200w{{- end -}}
                   {{- with $medium -}}, {{.}} 350w{{- end -}}
                   {{- with $large -}}, {{.}} 500w{{- end -}}
                   {{- with $featuredimage -}}, {{.}} 700w{{- end -}}" alt="Kie with Branding For Profit Book"
-                                class="w-full">
-                            {{ end }}
+                                    class="w-full">
+                                {{ end }}
+                            </div>
                             <div class="flex flex-col justify-start py-6">
 
                                 <p class="pb-6">
-                                    iaculis massa. Sed ornare ligula lacus, quis iaculis dui porta volutpat. In sit amet
-                                    posuere magna..
+                                    "I had zero knowledge about business. My travel company is now
+                                    thriving and it's all thanks to Andre's coaching and the concepts in his book"
                                 </p>
                                 <p class="uppercase text-gray-800 hover:text-black">
-                                    Continue Reading
+                                    <span class="font-medium">Susan Little</span> - Intelitravel
                                 </p>
                             </div>
                         </article>
@@ -477,13 +522,27 @@
 
             <!-- Bonus Section-->
             <section class="bg-slate-50 text-dark py-10">
-                <div class="flex justify-center px-4">
-                    <h4 class="h4 text-center">Join The Branding For Profit Challenge Today
+                <div class="text-center px-4">
+                    <h2 class="h2 text-red-600">But That’s Not All!</h2>
+                    <h4 class="h4">Join The Branding For Profit Challenge Today
                         <br />
                         And Get These <span class="text-green-600"> Amazing
                             Bonuses</span>
                         <br /><span class="underline decoration-blue-600">Absolutely Free</span>
-                        </h3>
+                    </h4>
+                    <p class="pt-4 text-xs sm:text-base md:text-lg">
+                        That’s right. I'm all about OVER-DELIVERING as much value as possible.<br />
+                        Why? Because...
+                    </p>
+                    <ul class=" text-xs sm:text-base md:text-lg">
+                        <li>
+                            a) I want to give you the greatest chance to succeed by avoid the same mistakes I made
+                        </li>
+                        <li>
+                            b) We might end up working together later on some cool stuff once you have launched
+                        </li>
+                    </ul>
+
                 </div>
                 <div class="flex flex-row px-4 py-4">
                     <div class="bg-white md:basis-3/4 mx-auto max-w-2xl shadow-xl py-4 rounded-xl">
@@ -499,8 +558,11 @@
                                     </div>
                                     <div class="py-4">
                                         <h5 class="h5">Branding For Profit Ebook</h5>
-                                        <h5 class="h5 text-green-600">Total Value: $29.99</h5>
-                                        <p>All the strategies and techniques needed to create an awesome brand
+                                        <h5 class="h5 text-green-600 mb-4">Total Value: $29.99</h5>
+                                        <p>Get all the strategies and techniques needed to create an awesome brand
+                                            covered
+                                            in this easy to read book. Use the exact same tactics Big Brands are using
+                                            to capture their customers and create raving fans.
                                         </p>
                                     </div>
                                 </div>
@@ -550,8 +612,11 @@
                                     </div>
                                     <div class="py-4">
                                         <h5 class="h5">Branding For Profit Video Course</h5>
-                                        <h5 class="h5 text-green-600">Total Value: $99.99</h5>
-                                        <p>All the strategies and techniques needed to create an awesome brand
+                                        <h5 class="h5 text-green-600 mb-4">Total Value: $99.99</h5>
+                                        <p>The video course goes into detail about creating your brand. It accompanies
+                                            the book by diving deeper
+                                            into why the brand strategies work. It then shows you how to use the tools
+                                            and guides to build out your brand elements.
                                         </p>
                                     </div>
                                 </div>
@@ -601,8 +666,10 @@
                                     </div>
                                     <div class="py-4">
                                         <h5 class="h5">Templates And Guides</h5>
-                                        <h5 class="h5 text-green-600">Total Value: $329.99</h5>
-                                        <p>All the strategies and techniques needed to create an awesome brand
+                                        <h5 class="h5 text-green-600 mb-4">Total Value: $113.65</h5>
+                                        <p>Need a shortcut to implement the straties covered in the book? Well that's
+                                            what the guides and templates are for. Fast track your way to a highly
+                                            effective brand by leveraging someone elses hard work.
                                         </p>
                                     </div>
                                 </div>
@@ -640,67 +707,99 @@
 
             </section>
 
-            <section class="bg-dark text-white pt-8 pb-24">
+            <section class="bg-dark text-white pt-8 px-4 pb-24">
                 <div class="mx-auto max-w-xl">
                     <div class="">
-                        <h2 class="h2 text-center" style="text-align: center;">Et Eveniet
-                            Maiores<br><span class="text-teal-500"><span
-                                    style="--decoration_scale:100; --decoration_offset_x:0; --decoration_offset_y:13;"
-                                    data-style_decoration_scale="100" data-style_decoration_offset_x="0"
-                                    data-style_decoration_offset_y="13"
-                                    class="tc-v2-text_decoration-underline">Blanditiis
-                                    Omnis
-                                    Ea</span></span>&nbsp;Ist Repellendus
-                        </h2>
+                        <h3 class="h3 text-center">As part of the challege you also get access to all the templates and
+                            guides I use for clients in my own digital agency
+                        </h3>
                     </div>
                     <div>
                         <ul role="list" class="mt-6 space-y-6">
-                            <li class="flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="flex-shrink-0 w-6 h-6 text-emerald-500 col-span-1"
-                                    aria-hidden="true">
-                                    <polyline points="20 6 9 17 4 12"></polyline>
-                                </svg>
-                                <span class="ml-3 col-span-2">30 credits</span>
-                                <span class="ml-3 col-span-2">$24.95 Value</span>
+                            <li class="flex justify-between">
+                                <span class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="inline w-6 h-6 text-emerald-500"
+                                        aria-hidden="true">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    THE PERFECT STORY GUIDE
+                                </span>
+                                <span class="ml-3 text-teal-500">$24.95 Value</span>
                             </li>
-                            <li class="flex"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="flex-shrink-0 w-6 h-6 text-emerald-500" aria-hidden="true">
-                                    <polyline points="20 6 9 17 4 12"></polyline>
-                                </svg><span class="ml-3 ">Powered by GPT-4 (more accurate)</span></li>
-                            <li class="flex"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="flex-shrink-0 w-6 h-6 text-emerald-500" aria-hidden="true">
-                                    <polyline points="20 6 9 17 4 12"></polyline>
-                                </svg><span class="ml-3 ">Generate video (2 credits)</span></li>
-                            <li class="flex"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="flex-shrink-0 w-6 h-6 text-emerald-500" aria-hidden="true">
-                                    <polyline points="20 6 9 17 4 12"></polyline>
-                                </svg><span class="ml-3 ">Quizz (1 credits) </span></li>
-                            <li class="flex"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="flex-shrink-0 w-6 h-6 text-emerald-500" aria-hidden="true">
-                                    <polyline points="20 6 9 17 4 12"></polyline>
-                                </svg><span class="ml-3 ">Analytics on the quizz</span></li>
+                            <li class="flex justify-between">
+                                <span class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="inline w-6 h-6 text-emerald-500"
+                                        aria-hidden="true">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    BRAND STYLE GUIDE TEMPLATE
+                                </span>
+                                <span class="ml-3 text-teal-500">$19.97 Value</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="inline w-6 h-6 text-emerald-500"
+                                        aria-hidden="true">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    THE PERFECT CUSTOMER TEMPLATE
+                                </span>
+                                <span class="ml-3 text-teal-500">$29.99 Value</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="inline w-6 h-6 text-emerald-500"
+                                        aria-hidden="true">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    THE PERSUASIVE BRAND GUIDE
+                                </span>
+                                <span class="ml-3 text-teal-500">$23.95 Value</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="inline w-6 h-6 text-emerald-500"
+                                        aria-hidden="true">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    BUYERS JOURNEY TEMPLATE
+                                </span>
+                                <span class="ml-3 text-teal-500">$14.79 Value</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="inline w-6 h-6 text-emerald-500"
+                                        aria-hidden="true">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    MORE SECRET TEMPLATES
+                                </span>
+                                <span class="ml-3 text-teal-500">$???? Value</span>
+                            </li>
                         </ul>
                     </div>
                     <div class="pt-8">
-                        <h2 class="h2 text-center">Total Value:
-                            <span class="text-teal-500">$329</span>
+                        <h2 class="h2 text-center">Total Value Including Bonuses:
+                            <span class="text-teal-500">$243.63</span>
                         </h2>
                     </div>
                 </div>
             </section>
 
-            <!-- Newsletter -->
-            <section class="pb-12">
+            <!-- Warning -->
+            <section class="py-12">
                 <div class="-mt-20 max-w-2xl mx-auto px-4 sm:px-6">
 
                     <!-- CTA box -->
@@ -725,14 +824,41 @@
 
                         <!-- CTA content -->
                         <div class="text-center">
-                            <h4 class="h4 font-light mb-3">Join the challenge today and get all the bonuses free
+                            <h4 class="h4 font-light mb-3">Join the challenge today with all the bonuses included
                             </h4>
-                            <h2 class="h2 mb-3">For Only <span class="text-red-600">$9</span></h2>
+                            <h2 class="h1 mb-3">For A Ridiculous <span class="text-red-600">$9</span></h2>
                             <h3 class="h3">Usually
-                                <span class="line-through">$397</span>
+                                <span class="line-through">$243.63</span>
                                 <span class="text-red-600">97% OFF!</span>
                             </h3>
+                            <p class="pt-2">That's less than the price of a Big Mac Combo Meal. And far less calories
+                                too!
+                            </p>
                         </div>
+                    </div>
+                    <div class="pt-6">
+                        <div class="text-center">
+                            <a href="https://secure-checkout.topbusinesscoaching.com/brand-challenge"
+                                class="grid justify-center rounded-lg bg-teal-500 hover:bg-primaryHover py-2 md:py-4 shadow-xl text-lg md:text-xl font-semibold text-white focus:ring focus:ring-gray-50 active:text-white/70 mt-10 px-6 md:px-12 transition ease-in-out duration-200">
+                                <span class="">Yes JOIN THE 'Branding For Profit'
+                                    Challenge For $9!</span>
+                                <span class="text-base">Click Here To Join The Challenge | Monday - Friday @ 2:00 PM
+                                    EST</span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section class="py-12">
+                <div class="-mt-20 max-w-2xl mx-auto px-4 sm:px-6">
+
+                    <div class="pt-6">
+                        <div class="">
+                            <h3 class="h3 text-red-600">WARNING</h3>
+                            <p>Due to other commitments, this might be the last brand challenge I ever run!</p>
+                        </div>
+
                     </div>
                 </div>
             </section>
