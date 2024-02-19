@@ -16,7 +16,7 @@
         </svg>
       </div>
       <div class="relative max-w-md px-4 py-6 mx-auto sm:max-w-3xl sm:px-6 lg:max-w-none lg:px-0 lg:py-20">
-        <div class="relative overflow-hidden shadow-xl rounded-2xl">
+        <div class="relative overflow-hidden shadow-xl rounded-2xl w-1/2 sm:w-full mx-auto">
           {{ with resources.Get "images/denlea.jpg" }}
           {{ $small := (.Resize "300x webp q80").RelPermalink }}
           {{ $medium := (.Resize "550x webp q80").RelPermalink }}
