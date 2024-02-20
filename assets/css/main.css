@@ -55,6 +55,11 @@ EmojiSymbols;
     @apply text-sm sm:text-base md:text-lg lg:text-xl font-medium;
 }
 
+.navheading {
+    @apply text-sm md:text-lg font-semibold text-white hover:text-primary focus:text-white
+}
+
+
 /* Buttons */
 .btn,
 .btn-sm {

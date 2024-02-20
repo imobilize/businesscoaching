@@ -1,6 +1,6 @@
 <div class="relative z-50 flex-none bg-white border-b">
     <div x-data="{ open: false }"
-        class="flex flex-col max-w-full px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8 font-mono text-heading">
+        class="sm:container flex flex-col px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8 font-mono text-heading">
         <div class="flex flex-row items-center justify-between px-4 py-2">
             <a href="/" class="flex transition duration-1000 ease-in-out group">
                 {{ $logo := resources.Get "images/logo/business-coaching-logo.svg" }}
@@ -25,14 +25,14 @@
             </button>
         </div>
         <nav :class="{'flex': open, 'hidden': !open}"
-            class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row font-medium text-sm sm:text-xs md:text-sm lg:text-lg">
-            <a class="px-4 py-2 mt-2 rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primaryHover focus:bg-primary focus:outline-none focus:shadow-outline"
+            class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row font-medium text-sm sm:text-xs lg:text-lg">
+            <a class="px-4 py-2 mt-2 rounded-lg md:mt-0 lg:mx-2 hover:text-white focus:text-white hover:bg-primaryHover focus:bg-primary focus:outline-none focus:shadow-outline"
                 href="/">Home</a>
 
-            <a class="px-4 py-2 mt-2 rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primaryHover focus:bg-primary focus:outline-none focus:shadow-outline"
+            <a class="px-4 py-2 mt-2 rounded-lg md:mt-0 lg:mx-2 hover:text-white focus:text-white hover:bg-primaryHover focus:bg-primary focus:outline-none focus:shadow-outline"
                 href="/about/">About</a>
 
-            <a class="px-4 py-2 mt-2 rounded-lg md:mt-0 md:ml-4 md:mr-4 hover:text-white focus:text-white hover:bg-primaryHover focus:bg-primary focus:outline-none focus:shadow-outline"
+            <a class="px-4 py-2 mt-2 rounded-lg md:mt-0 lg:mx-2 hover:text-white focus:text-white hover:bg-primaryHover focus:bg-primary focus:outline-none focus:shadow-outline"
                 href="/blog/">Blog</a>
 
             <a href="/book-consultation"
