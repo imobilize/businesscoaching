@@ -134,4 +134,4 @@ weight = 6
 [module]
 [module.hugoVersion]
 extended = true
-min = "0.111.3"
+min = "0.114.1+extended"
