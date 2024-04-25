@@ -37,14 +37,11 @@
                     <a href="https://youtu.be/sWzY227n220" class="glightbox-hero">
 
                         {{ with resources.Get "images/business-launch-academy-masterclass.gif" }}
-                        {{ $small := (.Resize "300x gif q100").RelPermalink }}
                         {{ $medium := (.Resize "550x gif q100").RelPermalink }}
-                        {{ $large := (.Resize "700x gif q100").RelPermalink }}
                         {{ $featuredimage := (.Resize "900x gif q100").RelPermalink }}
-                        <img class="mx-auto rounded-xl" src="{{ .RelPermalink }}" srcset="
-            {{- with $small -}}, {{.}} 320w{{- end -}}
+
+                        <img class="mx-auto rounded-xl" src="{{ $featuredimage }}" srcset="
             {{- with $medium -}}, {{.}} 550w{{- end -}}
-            {{- with $large -}}, {{.}} 768w{{- end -}}
             {{- with $featuredimage -}}, {{.}} 900w{{- end -}}" width="1024" height="504"
                             alt="Business Launch Academy Masterclass" />
                         {{ end }}
