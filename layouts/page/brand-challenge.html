@@ -169,20 +169,26 @@
 
 
             <section class="bg-gray-700">
-                <div class="container px-4 py-10 lg:py-16 mx-auto lg:flex lg:items-center lg:justify-between">
-                    <h2 class="text-2xl font-semibold tracking-tight xl:text-3xl text-white"> Your challenge starts:
+                <div class="container px-4 py-4 lg:py-8 mx-auto lg:flex lg:items-center lg:justify-between">
 
-                        Tuesday, 23rd July
-                    </h2>
-                    <div class="mt-8 lg:mt-0">
-                        <div class="flex flex-col space-y-3 sm:space-y-0 sm:flex-row sm:-mx-2">
-                            <button
-                                class="px-4 py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-sky-500 rounded-md focus:ring focus:ring-sky-300 focus:ring-opacity-80 fo sm:mx-2 hover:bg-sky-400 focus:outline-none focus:bg-sky-400">
-                                Get Started </button>
+                    <div class="py-6 mx-auto">
+                        <h2 class="text-2xl font-semibold tracking-tight xl:text-3xl text-white">
+                            Challenge date: Monday 19th August - Friday 23rd August
+                        </h2>
+                        <h3 class="pt-4 text-lg font-normal tracking-tight xl:text-xl text-gray-100">
+                            Workshop hours: Monday and Tuesday 6PM - 9PM UK (1PM - 4PM EST)
+                        </h3>
+                        <div class="text-center">
+                            <a href="https://secure-checkout.topbusinesscoaching.com/brand-challenge"
+                                class="grid justify-center rounded-lg bg-teal-500 hover:bg-teal-300 py-2 md:py-4 shadow-xl text-lg md:text-xl font-semibold text-white focus:ring focus:ring-gray-50 active:text-white/70 mt-10 px-6 md:px-12 transition ease-in-out duration-200">
+                                <span class="">Yes JOIN THE 'Branding For Profit'
+                                    Challenge For $49!</span>
+                                <span class="text-base">Click Here To Join The Challenge | Starts Monday 19th August @
+                                    1:00 PM
+                                    EST</span>
+                            </a>
                         </div>
-                        <p class="mt-3 text-sm text-gray-500 dark:text-gray-300">TUESDAY 30TH - WEDNESDAY 31ST JULY 2024
-                            3PM - 6PM UK (10AM - 1PM ET)
-                            Make sure not to miss this opportunity</p>
+
                     </div>
                 </div>
             </section>
@@ -405,17 +411,25 @@
                     alt="Branding For Profit Challenge" />
                 {{ end }}
 
-                <div class="container max-w-lg mx-auto  text-dark">
-
-                    <h3 class="h5 mb-8">Here’s What You’ll Learn Each Day Of The 5 Day Challenge</h3>
+                <div class="container max-w-4xl mx-auto text-dark">
+                    <h2 class="h2 mb-8">Here’s What You’ll Learn Each Day Of The Challenge Workshop</h2>
                 </div>
 
-                <div class="container mx-auto  text-dark">
+                <div class="container mx-auto max-w-5xl text-dark">
                     <div class="mt-8 space-y-8 xl:mx-6 xl:mt-0">
                         <div class="md:-mx-4 md:flex md:items-center">
+                            {{ with resources.Get "images/landing/brand-challenge/branding-for-profit-bundle.png" }}
+                            {{ $small := (.Resize "200x webp q90").RelPermalink }}
+                            {{ $medium := (.Resize "350x webp q90").RelPermalink }}
+                            {{ $large := (.Resize "500x webp q90").RelPermalink }}
+                            {{ $featuredimage := (.Resize "700x webp q90").RelPermalink }}
                             <img class="object-cover w-full h-56 md:h-48 md:mx-4 md:w-80 shrink-0"
-                                src="https://images.unsplash.com/photo-1556426356-0fdc8b663467?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1498&amp;q=80"
-                                alt="">
+                                src="{{ $featuredimage }}" srcset="
+                      {{- with $small -}}, {{.}} 200w{{- end -}}
+                      {{- with $medium -}}, {{.}} 350w{{- end -}}
+                      {{- with $large -}}, {{.}} 500w{{- end -}}
+                      {{- with $featuredimage -}}, {{.}} 700w{{- end -}}" alt="Branding For Profit Book Bundle">
+                            {{ end }}
                             <div class="mt-6 md:mx-4 md:mt-0">
                                 <h2 class="font-serif text-2xl font-medium text-gray-700">Day 1 - Brand Creation</h2>
                                 <p>
@@ -436,10 +450,20 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="md:-mx-4 md:flex md:items-center"><img
-                                class="object-cover w-full h-56 md:h-48 md:mx-4 md:w-80 shrink-0"
-                                src="https://images.unsplash.com/photo-1583470790878-4f4f3811a01f?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1476&amp;q=80"
-                                alt="">
+                        <div class="md:-mx-4 md:flex md:items-center">
+                            {{ with resources.Get "images/landing/brand-challenge/brand-amplification.png" }}
+                            {{ $small := (.Resize "200x webp q90").RelPermalink }}
+                            {{ $medium := (.Resize "350x webp q90").RelPermalink }}
+                            {{ $large := (.Resize "500x webp q90").RelPermalink }}
+                            {{ $featuredimage := (.Resize "700x webp q90").RelPermalink }}
+                            <img class="object-cover w-full h-56 md:h-48 md:mx-4 md:w-80 shrink-0"
+                                src="{{ $featuredimage }}" srcset="
+                          {{- with $small -}}, {{.}} 200w{{- end -}}
+                          {{- with $medium -}}, {{.}} 350w{{- end -}}
+                          {{- with $large -}}, {{.}} 500w{{- end -}}
+                          {{- with $featuredimage -}}, {{.}} 700w{{- end -}}" alt="Branding Amplification">
+                            {{ end }}
+
                             <div class="mt-6 md:mx-4 md:mt-0">
                                 <h2 class="font-serif text-2xl font-medium text-gray-700">Day 2 - Brand Amplification
                                 </h2>
@@ -557,7 +581,7 @@
                                     using the recommended strategies"
                                 </p>
                                 <p class="uppercase text-gray-800 hover:text-black">
-                                    <span class="font-medium">Kie Kariuku</span> - Lovaholics
+                                    <span class="font-medium">Kie Kariuku</span> - Lovaholics, Corby, UK
                                 </p>
                             </div>
                         </article>
@@ -585,7 +609,7 @@
                                     thriving and it's all thanks to Andre's coaching and the concepts in his book"
                                 </p>
                                 <p class="uppercase text-gray-800 hover:text-black">
-                                    <span class="font-medium">Susan Little</span> - Intelitravel
+                                    <span class="font-medium">Susan Little</span> - Intelitravel, London, UK
                                 </p>
                             </div>
                         </article>
@@ -632,7 +656,7 @@
                                     </div>
                                     <div class="py-4">
                                         <h5 class="h5">Branding For Profit Ebook</h5>
-                                        <h5 class="h5 text-green-600 mb-4">Total Value: $29.99</h5>
+                                        <h5 class="h5 text-green-600 mb-4">Value: $29.99</h5>
                                         <p>Get all the strategies and techniques needed to create an awesome brand
                                             covered
                                             in this easy to read book. Use the exact same tactics Big Brands are using
@@ -686,7 +710,7 @@
                                     </div>
                                     <div class="py-4">
                                         <h5 class="h5">Branding For Profit Video Course</h5>
-                                        <h5 class="h5 text-green-600 mb-4">Total Value: $99.99</h5>
+                                        <h5 class="h5 text-green-600 mb-4">Value: $99.99</h5>
                                         <p>The video course goes into detail about creating your brand. It accompanies
                                             the book by diving deeper
                                             into why the brand strategies work. It then shows you how to use the tools
@@ -740,7 +764,7 @@
                                     </div>
                                     <div class="py-4">
                                         <h5 class="h5">Templates And Guides</h5>
-                                        <h5 class="h5 text-green-600 mb-4">Total Value: $113.65</h5>
+                                        <h5 class="h5 text-green-600 mb-4">Value: $113.65</h5>
                                         <p>Need a shortcut to implement the straties covered in the book? Well that's
                                             what the guides and templates are for. Fast track your way to a highly
                                             effective brand by leveraging someone elses hard work.
@@ -865,7 +889,7 @@
                         </ul>
                     </div>
                     <div class="pt-8">
-                        <h2 class="h2 text-center">Total Value Including Bonuses:
+                        <h2 class="h2 text-center">Total Value Of Bonuses:
                             <span class="text-teal-500">$243.63</span>
                         </h2>
                     </div>
@@ -895,36 +919,39 @@
                             </svg>
                         </div>
 
-
                         <!-- CTA content -->
                         <div class="text-center">
-                            <h4 class="h4 font-light mb-3">Join the challenge today with all the bonuses included
+                            <h4 class="h4 font-light mb-3">Join the challenge today
                             </h4>
                             <h2 class="h1 mb-3">For A Ridiculous <span class="text-red-600">$49</span></h2>
-                            <h3 class="h3">Usually
+                            <h3 class="h3">And get instant access to the bonuses
                                 <span class="line-through">$243.63</span>
-                                <span class="text-red-600">97% OFF!</span>
+                                <span class="text-red-600">FREE GIFT!</span>
                             </h3>
-                            <p class="pt-2">That's less than the price of a Big Mac Combo Meal. And far less calories
-                                too!
-                            </p>
                         </div>
-                    </div>
-                    <div class="pt-6">
-                        <div class="text-center">
-                            <a href="https://secure-checkout.topbusinesscoaching.com/brand-challenge"
-                                class="grid justify-center rounded-lg bg-teal-500 hover:bg-teal-300 py-2 md:py-4 shadow-xl text-lg md:text-xl font-semibold text-white focus:ring focus:ring-gray-50 active:text-white/70 mt-10 px-6 md:px-12 transition ease-in-out duration-200">
-                                <span class="">Yes JOIN THE 'Branding For Profit'
-                                    Challenge For $49!</span>
-                                <span class="text-base">Click Here To Join The Challenge | Monday 23rd July @ 2:00 PM
-                                    EST</span>
-                            </a>
-                        </div>
-
                     </div>
                 </div>
+                <div class="container py-14 mx-auto text-center w-full">
+                    <h2 class="text-2xl font-semibold tracking-tight xl:text-3xl text-dark">
+                        Challenge date: Monday 19th August - Friday 23rd August
+                    </h2>
+                    <h3 class="pt-4 text-lg font-normal tracking-tight xl:text-xl text-dark">
+                        Workshop hours: Monday and Tuesday 6PM - 9PM UK (1PM - 4PM EST)
+                    </h3>
+                    <div class="text-center mx-auto max-w-3xl">
+                        <a href="https://secure-checkout.topbusinesscoaching.com/brand-challenge"
+                            class="grid justify-center rounded-lg bg-teal-500 hover:bg-teal-300 py-2 md:py-4 shadow-xl text-lg md:text-xl font-semibold text-white focus:ring focus:ring-gray-50 active:text-white/70 mt-10 px-6 md:px-12 transition ease-in-out duration-200">
+                            <span class="">Yes JOIN THE 'Branding For Profit'
+                                Challenge For $49!</span>
+                            <span class="text-base">Click Here To Join The Challenge | Starts Monday 19th August @
+                                1:00 PM
+                                EST</span>
+                        </a>
+                    </div>
+
+                </div>
             </section>
-            <section class="py-12">
+            <section class="pb-12">
                 <div class="-mt-20 max-w-2xl mx-auto px-4 sm:px-6">
 
                     <div class="pt-6">
