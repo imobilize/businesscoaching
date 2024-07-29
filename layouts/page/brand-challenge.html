@@ -94,73 +94,39 @@
 
 
                             <!-- Hero image -->
-                            <div x-data="{ modalExpanded: false }">
-                                <div class="relative max-w-2xl mx-auto flex justify-center items-center"
-                                    data-aos="fade-up" data-aos-delay="200">
-                                    {{ with resources.Get "images/landing/brand-challenge/animated-gif-example.gif" }}
-                                    {{ $small := (.Resize "300x gif q100").RelPermalink }}
-                                    {{ $medium := (.Resize "550x gif q100").RelPermalink }}
-                                    {{ $large := (.Resize "700x gif q100").RelPermalink }}
-                                    {{ $featuredimage := (.Resize "900x gif q100").RelPermalink }}
-                                    <img class="mx-auto rounded-xl" src="{{ .RelPermalink }}" srcset="
-                                {{- with $small -}}, {{.}} 320w{{- end -}}
-                                {{- with $medium -}}, {{.}} 550w{{- end -}}
-                                {{- with $large -}}, {{.}} 768w{{- end -}}
-                                {{- with $featuredimage -}}, {{.}} 900w{{- end -}}" width="1024" height="504"
-                                        alt="Branding For Profit Challenge" />
-                                    {{ end }}
-                                    <a class="absolute group" @click.prevent="modalExpanded = true" href="#0"
-                                        aria-controls="modal">
-                                        <svg class="w-16 h-16 sm:w-20 sm:h-20 hover:opacity-75 transition duration-150 ease-in-out"
-                                            viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
-                                            <defs>
-                                                <linearGradient x1="78.169%" y1="9.507%" x2="24.434%" y2="90.469%"
-                                                    id="a">
-                                                    <stop stop-color="#EBF1F5" stop-opacity=".8" offset="0%" />
-                                                    <stop stop-color="#EBF1F5" offset="100%" />
-                                                </linearGradient>
-                                            </defs>
-                                            <circle fill="url(#a)" cx="44" cy="44" r="44" />
-                                            <path class="fill-current text-purple-600"
-                                                d="M52 44a.999.999 0 00-.427-.82l-10-7A1 1 0 0040 37V51a.999.999 0 001.573.82l10-7A.995.995 0 0052 44V44c0 .001 0 .001 0 0z" />
-                                        </svg>
-                                    </a>
-                                </div>
-
-                                <!-- Modal backdrop -->
-                                <div class="fixed inset-0 z-50 bg-black bg-opacity-75 transition-opacity"
-                                    x-show="modalExpanded" x-transition:enter="transition ease-out duration-200"
-                                    x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
-                                    x-transition:leave="transition ease-out duration-100"
-                                    x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0"
-                                    aria-hidden="true" x-cloak></div>
-
-                                <!-- Modal dialog -->
-                                <div id="modal"
-                                    class="fixed inset-0 z-50 overflow-hidden flex items-center justify-center transform px-4 sm:px-6"
-                                    role="dialog" aria-modal="true" aria-labelledby="modal-headline"
-                                    x-show="modalExpanded" x-transition:enter="transition ease-out duration-200"
-                                    x-transition:enter-start="opacity-0 scale-95"
-                                    x-transition:enter-end="opacity-100 scale-100"
-                                    x-transition:leave="transition ease-out duration-200"
-                                    x-transition:leave-start="opacity-100 scale-100"
-                                    x-transition:leave-end="opacity-0 scale-95" x-cloak>
-                                    <div class="bg-white overflow-auto max-w-6xl w-full max-h-full"
-                                        @click.outside="modalExpanded = false"
-                                        @keydown.escape.window="modalExpanded = false">
-                                        <div class="relative pb-9/16">
-                                            <video
-                                                x-init="$watch('modalExpanded', value => value ? $el.play() : $el.pause())"
-                                                class="absolute w-full h-full" width="1920" height="1080" loop controls>
-                                                <source src="./videos/video.mp4" type="video/mp4" />
-                                                Your browser does not support the video tag.
-                                            </video>
-                                        </div>
-                                    </div>
-                                </div>
-
+                            <div class="pb-6">
+                                <p class="text-center text-yellow-300">Play the video below to learn more...</p>
                             </div>
+                            <div class="relative max-w-2xl mx-auto flex justify-center items-center" data-aos="fade-up"
+                                data-aos-delay="200">
+                                <a href="https://youtu.be/uG-jCj-REYw" class="glightbox-hero">
 
+                                    {{ with resources.Get
+                                    "images/landing/brand-challenge/branding-challenge-preview.gif" }}
+                                    {{ $medium := (.Resize "550x gif q100").RelPermalink }}
+                                    {{ $featuredimage := (.Resize "900x gif q100").RelPermalink }}
+
+                                    <img class="mx-auto rounded-xl" src="{{ $featuredimage }}" srcset="
+                    {{- with $medium -}}, {{.}} 550w{{- end -}}
+                    {{- with $featuredimage -}}, {{.}} 900w{{- end -}}" width="1024" height="504"
+                                        alt="Business Launch Academy Masterclass" />
+                                    {{ end }}
+                                </a>
+                                <a href="https://youtu.be/uG-jCj-REYw" class="glightbox-hero absolute group">
+                                    <svg class="w-16 h-16 sm:w-20 sm:h-20 hover:opacity-75 transition duration-150 ease-in-out"
+                                        viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                            <linearGradient x1="78.169%" y1="9.507%" x2="24.434%" y2="90.469%" id="a">
+                                                <stop stop-color="#EBF1F5" stop-opacity=".8" offset="0%" />
+                                                <stop stop-color="#EBF1F5" offset="100%" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle fill="url(#a)" cx="44" cy="44" r="44" />
+                                        <path class="fill-current text-secondary"
+                                            d="M52 44a.999.999 0 00-.427-.82l-10-7A1 1 0 0040 37V51a.999.999 0 001.573.82l10-7A.995.995 0 0052 44V44c0 .001 0 .001 0 0z" />
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
 
                     </div>
@@ -179,7 +145,7 @@
                             Workshop hours: Monday and Tuesday 6PM - 9PM UK (1PM - 4PM EST)
                         </h3>
                         <div class="text-center">
-                            <a href="https://secure-checkout.topbusinesscoaching.com/brand-challenge"
+                            <a href="https://secure-checkout.topbusinesscoaching.com/brand-challenge-checkout"
                                 class="grid justify-center rounded-lg bg-teal-500 hover:bg-teal-300 py-2 md:py-4 shadow-xl text-lg md:text-xl font-semibold text-white focus:ring focus:ring-gray-50 active:text-white/70 mt-10 px-6 md:px-12 transition ease-in-out duration-200">
                                 <span class="">Yes JOIN THE 'Branding For Profit'
                                     Challenge For $49!</span>
@@ -498,7 +464,10 @@
                             Barrett</h3>
                         <p class="mt-6">
                             Andre is an experienced Entrepreneur, Investor and Digital Product Expert. He currently runs
-                            Barrett Ventures which includes a portfolio of companies acquired through M&A transactions.
+                            Barrett Ventures which includes a portfolio of companies acquired through M&A (Mergers And
+                            Acquisitions) transactions.
+                        </p>
+                        <p class="mt-6">
                             His main background is in the development and marketing of digital products such as web
                             applications and mobile apps having run a Digital Agency for over 12 years. He has worked
                             with several large corporate clients to launch their digital products such as Sky,
@@ -522,17 +491,21 @@
                             acquired companies through digital transformation to create operational efficiencies. He
                             leverages his digital marketing expertise to help SMEs with their marketing and growth
                             objectives.
-                        </p><button class="flex items-center mt-8 -mx-2 text-indigo-500"><svg
-                                xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 mx-1" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z">
-                                </path>
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            <p class="mx-1 font-semibold">PLAY VIDEO</p>
-                        </button>
+                        </p>
+                        <a href="https://youtu.be/uG-jCj-REYw" class="glightbox-hero">
+
+                            <button class="flex items-center mt-8 -mx-2 text-primary"><svg
+                                    xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 mx-1" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z">
+                                    </path>
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <p class="mx-1 font-semibold">PLAY VIDEO</p>
+                            </button>
+                        </a>
                     </div>
                     <div class="mt-8 lg:w-1/2 lg:px-4 lg:mt-0">
 
@@ -936,7 +909,7 @@
                         Workshop hours: Monday and Tuesday 6PM - 9PM UK (1PM - 4PM EST)
                     </h3>
                     <div class="text-center mx-auto max-w-3xl">
-                        <a href="https://secure-checkout.topbusinesscoaching.com/brand-challenge"
+                        <a href="https://secure-checkout.topbusinesscoaching.com/brand-challenge-checkout"
                             class="grid justify-center rounded-lg bg-teal-500 hover:bg-teal-300 py-2 md:py-4 shadow-xl text-lg md:text-xl font-semibold text-white focus:ring focus:ring-gray-50 active:text-white/70 mt-10 px-6 md:px-12 transition ease-in-out duration-200">
                             <span class="">Yes JOIN THE 'Branding For Profit'
                                 Challenge For $49!</span>
