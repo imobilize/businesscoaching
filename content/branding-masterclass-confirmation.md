@@ -1,6 +1,6 @@
 ---
 title: Branding Masterclass Confirmation
-date: 2024-12-18T03:10:36.000Z
+date: 2024-6-18T03:10:36.000Z
 draft: false
 sitemapExclude: true
 language: en
