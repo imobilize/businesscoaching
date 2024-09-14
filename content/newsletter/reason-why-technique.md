@@ -1,12 +1,12 @@
 ---
-title: "The Reason Why Technique - Brand Building Bullet"
+title: "The Reason Why Technique - Branding Bullet"
 date: 2024-09-13T11:10:36+08:00
 draft: false
 language: en
-series: "Brand Building Bullets"
-image: images/business-coaching-cover.jpg
-images: ["images/business-coaching-cover.jpg"]
-description: "The Core Desire Technique - Brand Building Bullet"
+series: "Branding Bullets"
+image: images/branding-bullets.jpg
+images: ["images/branding-bullets.jpg"]
+description: "The Reason Why Technique - Branding Bullet"
 author: Andre Barrett
 authorImage: "images/authors/andre-barrett.jpg"
 ---
