@@ -3752,11 +3752,6 @@ html {
   color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 
-.text-blue-800 {
-  --tw-text-opacity: 1;
-  color: rgb(30 64 175 / var(--tw-text-opacity));
-}
-
 .underline {
   text-decoration-line: underline;
 }
@@ -3920,6 +3915,10 @@ EmojiSymbols;
 
 .prose :where(h1):not(:where([class~="not-prose"] *)) {
   color: white !important;
+}
+
+[x-cloak] {
+  display: none !important;
 }
 
 /* Typography */
