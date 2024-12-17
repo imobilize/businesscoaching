@@ -8,12 +8,12 @@ description: Coaching agreement for clients
 
 ## Introduction
 
-This coaching agreement is entered into between Barrett Business Partners providing coaching services (The Coach) and the client.
-It will begin on the date that the client purchases any coaching program or coaching services from The Coach such as Business Launch Academy. The agreement will continue until such time as the program ends or the client terminates the coaching services.
+This coaching agreement is entered into between Top Business Coaching providing coaching services (The Coach) and the client.
+It will begin on the date that the client purchases any coaching program or coaching services from The Coach such as Business Launch Academy or any other bespoke program designed specifically for the client. The agreement will continue until such time as the program ends or the client terminates the coaching services.
 
 ## Delivery
 
-The client will be given a schedule of coaching hours based on the program purchased. The schedule will vary depending on the program and the time of year the program commences. For most programs such as the Business Launch Academy, the usual sessions will be weekly business coaching via Zoom unless otherwise specified by The Coach. The coaching session will either be a group or individual call at the agreed upon time. The purpose of the coaching sessions is to provide the client with more confidence in their business choices and for the client to learn how to implement business growth strategies.
+The client will be given a schedule of coaching hours based on the program purchased. The schedule will vary depending on the program and the times agreed between the Coach and the client.. For most programs such as the Business Launch Academy, the usual sessions will be weekly business coaching via Zoom unless otherwise specified by The Coach. The coaching session will either be a group or individual call at the agreed upon time. The purpose of the coaching sessions is to provide the client with more confidence in their business choices and for the client to learn how to implement business growth strategies.
 
 It is up to the client to attend promptly at the allocated time of the coaching session. If the client does not attend within the first 5 mins of the scheduled time, their appointment will be cancelled with no recourse for the client to obtain a refund of any money or have the session rescheduled.  
 
@@ -33,7 +33,7 @@ There is an agreed understanding, that for the success of any coaching program o
 
 ### Fees
 
-The fee for the coaching sessions will be included as part of the cost of the program. Separate coaching sessions outside of the program can be arranged for an additional fee. This particular fee will be charged in advance of that session at an amount determined by The Coach and agreed by the client. The fee is payable either by bank transfer or through a payment provider.
+The fee for the coaching sessions will be included as part of the cost of the program. Separate coaching sessions outside of the program can be arranged for an additional fee. This particular fee will be charged in advance of that session at an amount determined by The Coach and agreed by the client. The fee is payable through the payment link provided by The Coach.
 
 ### Cancellation Policy
 
