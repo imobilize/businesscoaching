@@ -5654,6 +5654,10 @@ input[type="search"]::-webkit-search-results-decoration {
     padding-bottom: 6rem;
   }
 
+  .md\:pb-4 {
+    padding-bottom: 1rem;
+  }
+
   .md\:pb-8 {
     padding-bottom: 2rem;
   }
@@ -5684,10 +5688,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .md\:pt-8 {
     padding-top: 2rem;
-  }
-
-  .md\:pb-4 {
-    padding-bottom: 1rem;
   }
 
   .md\:text-left {
@@ -6200,6 +6200,10 @@ input[type="search"]::-webkit-search-results-decoration {
     padding-bottom: 14rem;
   }
 
+  .lg\:pb-6 {
+    padding-bottom: 1.5rem;
+  }
+
   .lg\:pb-\[90px\] {
     padding-bottom: 90px;
   }
@@ -6242,10 +6246,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .lg\:pt-8 {
     padding-top: 2rem;
-  }
-
-  .lg\:pb-6 {
-    padding-bottom: 1.5rem;
   }
 
   .lg\:text-left {

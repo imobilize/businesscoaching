@@ -87,7 +87,7 @@
                     role="tabpanel" tabindex="0" data-headlessui-state="selected"
                     aria-labelledby="headlessui-tabs-tab-:R6cqlaqlla:">
 
-                    {{ with resources.Get "images/landing/andre-barrett-coach.png" }}
+                    {{ with resources.Get "images/coaches/andre-barrett-coach.png" }}
                     {{ $featuredimage := (.Resize "450x webp q80").RelPermalink }}
                     <a href="/andre-barrett" class="block">
 
@@ -102,29 +102,32 @@
                                 <p class="mb-4 text-base text-neutral-600 text-white  dark:text-neutral-200">
                                     Barrett Ventures Group
                                 </p>
-
                             </div>
                         </div>
                     </a>
                     {{ end }}
 
-                    {{ with resources.Get "images/landing/business-coach-coming-soon.png" }}
+                    {{ with resources.Get "images/coaches/mane-agambi-coach.png" }}
                     {{ $featuredimage := (.Resize "450x webp q80").RelPermalink }}
-                    <div class="h-[380px] max-w-sm rounded-lg bg-white bg-cover shadow-lg dark:bg-neutral-700 grid grid-cols-1 gap-4 content-end overflow-clip"
-                        style="background-image: url('{{ $featuredimage }}');">
-                        <div
-                            class="h-[160px] bg-gradient-to-t from-black to-transparent px-6 grid grid-cols-1 content-end">
-                            <h5 class="mb-2 font-medium leading-tight text-neutral-800 text-white dark:text-neutral-50">
-                                7+ figure business owner
-                            </h5>
-                            <p class="mb-4 text-base text-neutral-600 text-white  dark:text-neutral-200">
-                                Coming Soon
-                            </p>
+                    <a href="/mane-agambi" class="block">
+
+                        <div class="h-[380px] max-w-sm rounded-lg bg-white bg-cover shadow-lg dark:bg-neutral-700 grid grid-cols-1 gap-4 overflow-clip content-end"
+                            style="background-image: url('{{ $featuredimage }}');">
+                            <div
+                                class="h-[160px] bg-gradient-to-t from-black to-transparent px-6 grid grid-cols-1 content-end hover:text-primaryHover">
+                                <h5
+                                    class="mb-2 text-xl font-medium leading-tight text-neutral-800 text-white hover:text-primaryHover dark:text-neutral-50">
+                                    Mane Agambi
+                                </h5>
+                                <p class="mb-4 text-base text-neutral-600 text-white  dark:text-neutral-200">
+                                    Mane Incorporated
+                                </p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                     {{ end }}
 
-                    {{ with resources.Get "images/landing/business-coach-coming-soon.png" }}
+                    {{ with resources.Get "images/coaches/business-coach-coming-soon.png" }}
                     {{ $featuredimage := (.Resize "450x webp q80").RelPermalink }}
                     <div class="h-[380px] max-w-sm rounded-lg bg-white bg-cover shadow-lg dark:bg-neutral-700 grid grid-cols-1 gap-4 content-end overflow-clip"
                         style="background-image: url('{{ $featuredimage }}');">

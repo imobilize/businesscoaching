@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 <div>
-    {{ $bg := resources.Get "images/backgrounds/profile-bg-hero.jpg" }}
+    {{ $bg := resources.Get "images/backgrounds/mane-agambi-fine-dining.jpg" }}
     <div class="relative bg-cover bg-center bg-no-repeat py-8" style="background-image: url({{ $bg.RelPermalink }})">
         <div class="absolute inset-0 z-20 bg-gradient-to-t from-slate-900">
         </div>
@@ -9,7 +9,7 @@
         <div class="container mx-auto relative z-30">
             <div class="flex flex-col items-center justify-center lg:flex-row">
                 <div class="rounded-full border-8 border-primary shadow-xl">
-                    {{ with resources.Get "images/coaches/andre-barrett-business-coach.png" }}
+                    {{ with resources.Get "images/coaches/mane-agambi-business-coach.png" }}
                     {{ $small := (.Resize "400x webp q80").RelPermalink }}
                     {{ $medium := (.Resize "550x webp q80").RelPermalink }}
                     {{ $large := (.Resize "900x webp q80").RelPermalink }}
@@ -24,7 +24,7 @@
                 </div>
                 <div class="pt-8 sm:pt-10 lg:pl-8 lg:pt-0">
                     <h1 class="text-center font-header h1 text-white sm:text-left">
-                        Hello I'm Andre Barrett!
+                        Hello I'm Mane Agambi!
                     </h1>
                 </div>
             </div>
@@ -36,38 +36,34 @@
             <div class="w-full text-center sm:w-3/4 lg:w-3/5 lg:text-left">
                 <h2
                     class="font-header text-2xl font-semibold uppercase text-heading sm:text:3xl md:text-4xl lg:text-5xl">
-                    Who am I?
+                    About Me?
                 </h2>
                 <h4 class="pt-6 font-header h4 text-body">
-                    I'm an Author, Entrepreneur and Investor
+                    I'm an Entrepreneur, Property Expert and Investor
                 </h4>
                 <p class="pt-6 leading-relaxed text-grey-20">
-                    I'm the founder of Business Launch Academy and I'm really excited at the opportunity to help you
-                    build
-                    your business.
-
-                    I've been working in Startups and helping small businesses grow for over 16 years.
-                    I have failed multiple times as an Entrepreneur before I started getting any success.
-                    This puts me in a great position to help others avoid the countless mistakes I made and direct them
-                    on a path that gives them the highest probability of success.
+                    Hi, I’m Mane Agambi, and I bring over a decade of experience in sales, property, and business
+                    development.
                 </p>
                 <br />
                 <p>
-                    Now I own and manage multiple 6 and 7+ figure businesses and I'm buying or starting a new one every
-                    year. I do this in a holding company structure called Barrett Ventures.
+                    At just 29 years old, I have:
 
-                    You see business becomes a simple formula once you have it figured out. You can then apply the
-                    formula in a
-                    rinse and repeat manner to any business venture you take on.
+                    <li>7 years in the property industry working with leading UK real estate companies like William H.
+                        Brown, Connells, JLL, and Savills.</li>
+
+                    <li>10 years in sales, starting from EE phone sales and growing into real estate, where I closed
+                        deals worth seven figures.</li>
+
+                    <li>4 years running successful businesses, including e-commerce, dropshipping, and a property
+                        business I’m still managing today.</li>
                 </p>
                 <br />
                 <p>
-                    I was keen to share the success I have achieved so I started writing, putting together courses and
-                    coaching. I am certified Mindset coach which means not only can I give you the business acumen you
-                    need to thrive, I can also unlock any mindset restrictions holding you back too.
-
-                    Without a shadow of a doubt, I would say the mindset improvement is the most important out of all
-                    the services I can provide.
+                    Over the years, I have helped companies generate six-figure revenues and have personally closed
+                    deals
+                    exceeding seven figures. I specialize in empowering individuals and businesses to scale, grow, and
+                    achieve measurable results.
                 </p>
                 <div class="flex flex-col justify-center pt-6 sm:flex-row lg:justify-start">
                     <div class="flex items-center justify-center sm:justify-start">
@@ -79,8 +75,7 @@
                         </div>
                     </div>
                     <div class="space-x-6 flex items-center justify-center pt-5 pl-4 sm:justify-start sm:pt-0">
-                        <a href="https://www.facebook.com/andrebarrettcoaching"
-                            class="text-gray-400 hover:text-primaryHover">
+                        <a href="https://www.facebook.com/" class="text-gray-400 hover:text-primaryHover">
                             <span class="sr-only">Facebook</span>
                             <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path fill-rule="evenodd"
@@ -89,8 +84,7 @@
                             </svg>
                         </a>
 
-                        <a href="https://www.instagram.com/andrebarrett_uk/"
-                            class="text-gray-400 hover:text-primaryHover">
+                        <a href="https://www.instagram.com/" class="text-gray-400 hover:text-primaryHover">
                             <span class="sr-only">Instagram</span>
                             <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path fill-rule="evenodd"
@@ -99,7 +93,7 @@
                             </svg>
                         </a>
 
-                        <a href="https://twitter.com/andrebarrett_uk" class="text-gray-400 hover:text-primaryHover">
+                        <a href="https://twitter.com/" class="text-gray-400 hover:text-primaryHover">
                             <span class="sr-only">Twitter</span>
                             <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path
@@ -107,7 +101,7 @@
                             </svg>
                         </a>
 
-                        <a href="https://www.youtube.com/@andre-barrett" class="text-gray-400 hover:text-primaryHover">
+                        <a href="https://www.youtube.com/" class="text-gray-400 hover:text-primaryHover">
                             <span class="sr-only">Youtube</span>
                             <svg class="w-10 h-10" fill="currentColor" data-name="Layer 1" viewBox="0 0 24 24"
                                 id="youtube">
@@ -117,8 +111,7 @@
                             </svg>
                         </a>
 
-                        <a href="https://www.linkedin.com/in/andre-barrett"
-                            class="text-gray-400 hover:text-primaryHover">
+                        <a href="https://www.linkedin.com/" class="text-gray-400 hover:text-primaryHover">
                             <span class="sr-only">LinkedIn</span>
 
                             <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" data-name="Layer 1"
@@ -135,9 +128,9 @@
                 <div>
                     <div class="flex items-end justify-between">
                         <h4 class="font-semibold uppercase text-black">
-                            Branding &amp; Marketing
+                            Business Strategy
                         </h4>
-                        <h3 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-heading">85%</h3>
+                        <h3 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-heading">75%</h3>
                     </div>
                     <div class="mt-2 h-3 w-full rounded-full bg-lila">
                         <div class="h-3 rounded-full bg-primary" style="width: 85%"></div>
@@ -145,8 +138,8 @@
                 </div>
                 <div class="pt-6">
                     <div class="flex items-end justify-between">
-                        <h4 class="font-semibold uppercase text-black">Mergers &amp; Acquisitions</h4>
-                        <h3 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-heading">70%</h3>
+                        <h4 class="font-semibold uppercase text-black">Raising Capital</h4>
+                        <h3 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-heading">85%</h3>
                     </div>
                     <div class="mt-2 h-3 w-full rounded-full bg-lila">
                         <div class="h-3 rounded-full bg-primary" style="width: 70%"></div>
@@ -155,9 +148,9 @@
                 <div class="pt-6">
                     <div class="flex items-end justify-between">
                         <h4 class="font-semibold uppercase text-black">
-                            Software Development
+                            JV Partnerships
                         </h4>
-                        <h3 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-heading">98%</h3>
+                        <h3 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-heading">92%</h3>
                     </div>
                     <div class="mt-2 h-3 w-full rounded-full bg-lila">
                         <div class="h-3 rounded-full bg-primary" style="width: 98%"></div>
@@ -165,8 +158,8 @@
                 </div>
                 <div class="pt-6">
                     <div class="flex items-end justify-between">
-                        <h4 class="font-semibold uppercase text-black">Business Strategy</h4>
-                        <h3 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-heading">91%</h3>
+                        <h4 class="font-semibold uppercase text-black">Startups</h4>
+                        <h3 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-heading">79%</h3>
                     </div>
                     <div class="mt-2 h-3 w-full rounded-full bg-lila">
                         <div class="h-3 rounded-full bg-primary" style="width: 91%"></div>
@@ -187,11 +180,12 @@
 
     <div class="container mx-auto py-16 md:py-20" id="services">
         <h2 class="text-center font-semibold uppercase text-heading h2">
-            Here's what I'm good at
+            What I Offer
         </h2>
-        <h3 class="pt-6 text-center h3 text-dark">
-            This is what I can help you with
-        </h3>
+        <p class="pt-6 text-center text-dark max-w-2xl mx-auto">
+            Whether you’re an aspiring entrepreneur, a property investor, or someone looking to improve personally and
+            professionally, I can help you with:
+        </p>
 
         <div class="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3">
             <div class="group rounded px-8 py-12 shadow">
@@ -204,10 +198,13 @@
                 <div class="text-center">
                     <h3
                         class="pt-8 text-base md:text-lg lg:text-xl font-semibold uppercase text-heading group-hover:text-yellow">
-                        WEB DEVELOPMENT
+                        Property & Business Development
                     </h3>
                     <p class="text-grey pt-4 text-sm md:text-base">
-                        I have been running a digital marketing agency for many years. Web development is a core focus.
+                        <li>Marketing and Sales Strategies</li>
+                        <li>Project Management</li>
+                        <li>Running and Scaling a Business</li>
+                        <li>People Management & Team Building</li>
                     </p>
                 </div>
             </div>
@@ -221,12 +218,15 @@
                 <div class="text-center">
                     <h3
                         class="pt-8 text-base md:text-lg lg:text-xl font-semibold uppercase text-heading group-hover:text-yellow">
-                        Project Management
+                        Key Skills
                     </h3>
                     <p class="text-grey pt-4 text-sm md:text-base">
-                        I have lead teams to successfully deliver numerous software and real estate projects, on time
-                        and
-                        sometimes under budget.
+                        <li>Deal Sourcing & Negotiation</li>
+                        <li>Capital Raising Strategies</li>
+                        <li>Financial Modelling & Budgeting</li>
+                        <li>Risk Assessment & Mitigation</li>
+                        <li>Stakeholder Collaboration</li>
+                        <li>Market Research & Trend Analysis</li>
                     </p>
                 </div>
             </div>
@@ -240,66 +240,12 @@
                 <div class="text-center">
                     <h3
                         class="pt-8 text-base md:text-lg lg:text-xl font-semibold uppercase text-heading group-hover:text-yellow">
-                        Mobile Development
+                        Personal Life Coaching
                     </h3>
                     <p class="text-grey pt-4 text-sm md:text-base">
-                        I spent a large part of my career consulting and building native iOS and Android mobile apps for
-                        big and small
-                        businesses.
-                    </p>
-                </div>
-            </div>
-            <div class="group rounded px-8 py-12 shadow">
-                <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
-                    {{ $branding := resources.Get "images/icons/social_dashboard.svg"}}
-                    <div class="block">
-                        <img src="{{ $branding.RelPermalink }}" alt="Branding and Marketing icon">
-                    </div>
-                </div>
-                <div class="text-center">
-                    <h3
-                        class="pt-8 text-base md:text-lg lg:text-xl font-semibold uppercase text-heading group-hover:text-yellow">
-                        Branding and Marketing
-                    </h3>
-                    <p class="text-grey pt-4 text-sm  md:text-base">
-                        Seeing clients struggle to get customers, I learnt everything I could about marketing and
-                        branding. I eventually wrote a book on the topic.
-                    </p>
-                </div>
-            </div>
-            <div class="group rounded px-8 py-12 shadow">
-                <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
-                    {{ $growth := resources.Get "images/icons/revenue.svg"}}
-                    <div class="block">
-                        <img src="{{ $growth.RelPermalink }}" alt="Business Growth icon">
-                    </div>
-                </div>
-                <div class="text-center">
-                    <h3
-                        class="pt-8 text-base md:text-lg lg:text-xl font-semibold uppercase text-heading group-hover:text-yellow">
-                        Business Growth
-                    </h3>
-                    <p class="text-grey pt-4 text-sm md:text-base">
-                        I have started and grown several businesses using the same principles I share with my clients. I
-                        now buy businesses helping previous owners to transition out while continuing to scale them.
-                    </p>
-                </div>
-            </div>
-            <div class="group rounded px-8 py-12 shadow">
-                <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
-                    {{ $coaching := resources.Get "images/icons/business_chat.svg"}}
-                    <div class="block">
-                        <img src="{{ $coaching.RelPermalink }}" alt="Business Coaching icon">
-                    </div>
-                </div>
-                <div class="text-center">
-                    <h3
-                        class="pt-8 text-base md:text-lg lg:text-xl font-semibold uppercase text-heading group-hover:text-yellow">
-                        Coaching
-                    </h3>
-                    <p class="text-grey pt-4 text-sm md:text-base">
-                        Mentoring, motivating and getting the best out of people. I love it so I followed my passion and
-                        started a business out of it.
+                        <li>Goal Setting & Achievement</li>
+                        <li>Breaking Goals into Simple, Actionable Steps</li>
+                        <li>Building Confidence and Motivation</li>
                     </p>
                 </div>
             </div>
@@ -314,31 +260,19 @@
                 </h2>
                 <div class="flex flex-wrap items-center justify-center pt-8 sm:pt-12 md:pt-16">
                     <span class="mx-8 block">
-                        {{ with resources.Get "images/logos/gamesys-logo.png" }}
-                        <img src="{{ .RelPermalink }}" alt="Gamesys client logo" class="mx-auto block h-12 w-auto">
+                        {{ with resources.Get "images/logos/JLL-logo.png" }}
+                        <img src="{{ .RelPermalink }}" alt="JLL logo" class="mx-auto block h-12 w-auto">
                         {{ end }}
                     </span>
                     <span class="mx-8 block">
-                        {{ with resources.Get "images/logos/kindred-logo.png" }}
-                        <img src="{{ .RelPermalink }}" alt="Kindred client logo" class="mx-auto block h-12 w-auto">
-                        {{ end }}
-                    </span>
-
-                    <span class="mx-8 block">
-                        {{ with resources.Get "images/logos/sainsburys-logo.png" }}
-                        <img src="{{ .RelPermalink }}" alt="Sainsburys client logo" class="mx-auto block h-12 w-auto">
+                        {{ with resources.Get "images/logos/savills-logo.png" }}
+                        <img src="{{ .RelPermalink }}" alt="Savills logo" class="mx-auto block h-12 w-auto">
                         {{ end }}
                     </span>
 
                     <span class="mx-8 block">
-                        {{ with resources.Get "images/logos/sky-logo.png" }}
-                        <img src="{{ .RelPermalink }}" alt="Sky client logo" class="mx-auto block h-12 w-auto">
-                        {{ end }}
-                    </span>
-
-                    <span class="mx-8 block">
-                        {{ with resources.Get "images/logos/jp-morgan-logo.jpg" }}
-                        <img src="{{ .RelPermalink }}" alt="JP Morgan client logo" class="mx-auto block h-12 w-auto">
+                        {{ with resources.Get "images/logos/williamhbrown-logo.png" }}
+                        <img src="{{ .RelPermalink }}" alt="William H Brown logo" class="mx-auto block h-12 w-auto">
                         {{ end }}
                     </span>
                 </div>
@@ -348,73 +282,24 @@
 
     <div class="sm:container mx-auto py-16 md:py-20" id="work">
         <h2 class="text-center h2 uppercase text-heading">
-            My experience
+            Business Coaching and Mentoring
         </h2>
         <h3 class="pt-6 text-center h3 text-black">
-            Here's what I did while consulting and working for clients
+            Why Work With Me?
         </h3>
 
         <div class="prose mx-auto my-8 dark:prose-dark px-4">
-            <p>I am a multi-skilled CTO and Entrepreneur with comprehensive experience in leading software development
-                teams to deliver the highest quality, global brand iOS and Android mobile apps, Web apps, and
-                Server-side applications.</p>
-            <p>For over 13 years, I have been running a Digital Agency called Outsourced Marketing And
-                Sales Ltd.
-                The team consists of full-time employees and a temp offshore team.</p>
-            <p>The team includes:
-                iOS Engineers
-                Android Engineers
-                Full-stack Engineers Java/React/Angular/HTML
-                Graphic Designer
-                Project Manager</p>
-            <p>The team is focussed on delivering scalable mobile and web applications with great UI/UX. We do this by
-                A) Using the latest UI/UX design practices
-                B) Developing on top of the latest tech stacks served on robust platforms such as GCP
-                C) Great Architectural Design, Continuous Integration and TDD</p>
-            <p>As a company I have delivered projects that include:
-                Java/Kotlin backends on top of Spring Boot/Spark and Vertx Web frameworks
-                Web frontends using Angular/React javascript frameworks and Webpack
-                Stateless Mobile friendly JSON API’s with OAuth 2 authorization
-                Oauth/Third party provider logins such as Facebook, Google and Auth0</p>
-            <p>iMobilize has been employed by well known brands such as Sainsburys, Discovery Channel, Gamesys,
-                OddsChecker, Ben Sherman and Sky.</p>
-            <p>I have also worked with numerous startups acting as an interim CTO. In my roles I have undertaken Leading
-                and Mentoring, Project Management, Solutions Architecture, UX and UI Design, Software Development and
-                Online Marketing.</p>
-            <h4 id="my-particular-areas-of-expertise-are">My particular areas of expertise are:</h4>
-            <ul>
-                <li>Leading and mentoring</li>
-                <li>Startups, product development and strategy</li>
-                <li>Mobile app design and development</li>
-                <li>Responsive website design and development</li>
-                <li>Agile development and process</li>
-                <li>API design and architecture</li>
-                <li>Scalable infrastructure</li>
-                <li>Coding standards and best practices</li>
-                <li>Continuous integration</li>
-                <li>Test automation</li>
-                <li>Financial Engineering</li>
-            </ul>
-            <h4 id="it-skills-and-comptencies">IT Skills and comptencies</h4>
-            <ul>
-                <li>Proficient in Java, Kotlin, Swift, C/C++, and Javascript programming</li>
-                <li>Proficient in use of development environments IntelliJ, Xcode and VSCode</li>
-                <li>iPhone &amp; iPad, Android, iOS application development</li>
-                <li>Proficient in XML, Javascript, JSON, HTML and SQL</li>
-                <li>Web services, Servlets, JSP’s, AJAX, PHP web development</li>
-                <li>Dev Ops and Platform engineering</li>
-                <li>Cloud Architecture and Design on AWS and GCP</li>
-            </ul>
-            <h4 id="academic-qualifications">Academic Qualifications</h4>
-            <ul>
-                <li>Mindset Coaching Certificate (Mindset Coach Academy) - Lara Young</li>
-                <li>Certificate In Quantitative Finance (CQF) - Paul Wilmott</li>
-                <li>Institute Of Trading and Portfolio Management - Anton Kreil</li>
-                <li>Chartered Financial Analyst Program (CFA level 1 & 2) - CFA Institute</li>
-                <li>BEng (Hons) 2:1 in Electronic Engineering with Spanish Nottingham University 2002 - 2006</li>
-                <li>BSc in Computer Science (Returned to UK Higher Education before completing) Georgia College and
-                    State University, USA 2000 - 2002</li>
-            </ul>
+            <p>I understand what it takes to succeed. I’ve navigated challenges, built businesses from the ground up,
+                and consistently delivered results. My approach is practical, actionable, and tailored to help you
+                unlock your full potential in business, property, or personal growth.</p>
+        </div>
+        <h3 class="pt-6 text-center h3 text-black">
+            Let’s Achieve Your Goals Together
+        </h3>
+
+        <div class="prose mx-auto my-8 dark:prose-dark px-4">
+            <p>If you’re ready to take the next step in your career, business, or personal life, let’s work together to
+                create a clear, actionable roadmap to success.</p>
         </div>
     </div>
 
