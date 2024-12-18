@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 <div>
-    {{ $bg := resources.Get "images/backgrounds/mane-agambi-fine-dining.jpg" }}
+    {{ $bg := resources.Get "images/backgrounds/city-skyline.jpg" }}
     <div class="relative bg-cover bg-center bg-no-repeat py-8" style="background-image: url({{ $bg.RelPermalink }})">
         <div class="absolute inset-0 z-20 bg-gradient-to-t from-slate-900">
         </div>
@@ -48,7 +48,7 @@
                 <br />
                 <p>
                     At just 29 years old, I have:
-
+                <ul class="list-disc">
                     <li>7 years in the property industry working with leading UK real estate companies like William H.
                         Brown, Connells, JLL, and Savills.</li>
 
@@ -57,6 +57,7 @@
 
                     <li>4 years running successful businesses, including e-commerce, dropshipping, and a property
                         business I’m still managing today.</li>
+                </ul>
                 </p>
                 <br />
                 <p>
@@ -196,16 +197,18 @@
                         <img src="{{ $web.RelPermalink }}" alt="web development icon">
                     </div>
                 </div>
-                <div class="text-center">
+                <div class="">
                     <h3
-                        class="pt-8 text-base md:text-lg lg:text-xl font-semibold uppercase text-heading group-hover:text-yellow">
+                        class="text-center pt-8 text-base md:text-lg lg:text-xl font-semibold uppercase text-heading group-hover:text-yellow">
                         Property & Business Development
                     </h3>
                     <p class="text-grey pt-4 text-sm md:text-base">
+                    <ul class="list-disc">
                         <li>Marketing and Sales Strategies</li>
                         <li>Project Management</li>
                         <li>Running and Scaling a Business</li>
                         <li>People Management & Team Building</li>
+                    </ul>
                     </p>
                 </div>
             </div>
@@ -216,18 +219,20 @@
                         <img src="{{ $project.RelPermalink }}" alt="Project Management icon">
                     </div>
                 </div>
-                <div class="text-center">
+                <div class="">
                     <h3
-                        class="pt-8 text-base md:text-lg lg:text-xl font-semibold uppercase text-heading group-hover:text-yellow">
+                        class="text-center pt-8 text-base md:text-lg lg:text-xl font-semibold uppercase text-heading group-hover:text-yellow">
                         Key Skills
                     </h3>
                     <p class="text-grey pt-4 text-sm md:text-base">
+                    <ul class="list-disc">
                         <li>Deal Sourcing & Negotiation</li>
                         <li>Capital Raising Strategies</li>
                         <li>Financial Modelling & Budgeting</li>
                         <li>Risk Assessment & Mitigation</li>
                         <li>Stakeholder Collaboration</li>
                         <li>Market Research & Trend Analysis</li>
+                    </ul>
                     </p>
                 </div>
             </div>
@@ -238,15 +243,17 @@
                         <img src="{{ $mobile.RelPermalink }}" alt="Mobile Application icon">
                     </div>
                 </div>
-                <div class="text-center">
+                <div class="">
                     <h3
-                        class="pt-8 text-base md:text-lg lg:text-xl font-semibold uppercase text-heading group-hover:text-yellow">
+                        class="text-center pt-8 text-base md:text-lg lg:text-xl font-semibold uppercase text-heading group-hover:text-yellow">
                         Personal Life Coaching
                     </h3>
                     <p class="text-grey pt-4 text-sm md:text-base">
+                    <ul class="list-disc">
                         <li>Goal Setting & Achievement</li>
                         <li>Breaking Goals into Simple, Actionable Steps</li>
                         <li>Building Confidence and Motivation</li>
+                    </ul>
                     </p>
                 </div>
             </div>
