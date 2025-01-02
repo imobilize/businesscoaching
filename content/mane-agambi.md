@@ -5,8 +5,8 @@ draft: false
 language: en
 description: Mane Agambi - Entrepreneur, Property Expert, Investor, Business Coach
 author: "Mane Agambi"
-image: "images/business-coaching-cover.jpg"
-images: ["images/business-coaching-cover.jpg"]
+image: "images/coaches/mane-agambi-coach.png"
+images: ["images/coaches/mane-agambi-coach.png"]
 keywords: "Mane Agambi, Property, Business Coaching, Startups, Marketing, Sales, Branding, Entrepreneurship"
 type: page
 layout: mane-agambi

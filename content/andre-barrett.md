@@ -5,8 +5,8 @@ draft: false
 language: en
 description: Andre Barrett - Author, Entrepreneur, Investor, Business Coach, founder of Business Launch Academy
 author: "Andre Barrett"
-image: "images/business-coaching-cover.jpg"
-images: ["images/business-coaching-cover.jpg"]
+image: "images/coaches/andre-barrett-coach.png"
+images: ["images/coaches/andre-barrett-coach.png"]
 keywords: "Andre Barret, Business Coaching, Startups, Marketing, Sales, Branding, Entrepreneurship"
 type: page
 layout: andre-barrett
