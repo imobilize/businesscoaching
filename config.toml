@@ -11,7 +11,7 @@ canonifyURLs = true
 paginate = 8
 darkmode_js = ["assets/js/darkmode.js"]
 enableInlineShortcodes = true
-timeout = 90
+timeout = "60000ms"
 
 [outputs]
 home = ["HTML", "AMP", "RSS", "JSON"]

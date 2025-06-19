@@ -20,6 +20,14 @@
 </script>
 <!-- End Google Tag Manager -->
 
+
+{{ $klaroConfig := resources.Get "js/klaro-config.js" }}
+<script src="{{ $klaroConfig.RelPermalink }}"></script>
+
+{{ $klaro := resources.Get "js/klaro.js" | js.Build }}
+<script defer src="{{ $klaro.RelPermalink }}"></script>
+
+
 {{ $styles := resources.Get "/css/style.css" | postCSS }}
 {{ if .Site.IsServer }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />

@@ -1,3 +1,6 @@
+{{ $focus := resources.Get "js/focus.min.js"}}
+<script src="{{ $focus.RelPermalink }}"></script>
+
 {{ $alpine := resources.Get "js/alpine.js" | js.Build }}
 <script src="{{ $alpine.RelPermalink }}"></script>
 

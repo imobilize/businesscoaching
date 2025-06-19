@@ -27,7 +27,7 @@ EmojiSymbols;
     color: white !important;
 }
 
-
+[x-cloak] { display: none !important; }
 
 /* Typography */
 
